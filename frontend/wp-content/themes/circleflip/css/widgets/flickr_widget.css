@@ -1,0 +1,9 @@
+.flickrList {
+	margin-left: -20px;
+}
+.flickrList li {
+	float: left;
+        list-style:none;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}

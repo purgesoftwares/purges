@@ -1,0 +1,482 @@
+/** Common Style **/
+.postBlog1, .postBlog2, .postBlog4 {
+	border-bottom: 1px solid #d0d0d0;
+	padding-bottom: 35px;
+	margin-bottom: 35px;
+}
+.singlePost .postBlog1{
+	border-bottom: none;
+}
+.postImage img {
+	width: auto;
+}
+.postImage iframe {
+	max-width: 100%;
+}
+.postText p {
+	margin-bottom: 0;
+}
+.postText ul li p, .postText ol li p{
+	margin-left: 0;
+}
+.postText ul li, .postText ol li{
+	margin-left: 15px;
+	list-style: inherit;
+}
+.postText .wp-caption {
+	display: inline-block;
+}
+.postText nav.pagination .dots{
+	background: none;
+}
+.postText nav.pagination li span, .postText nav.pagination li a{
+	text-align: center;
+}
+.postText ul.gallery li {
+	list-style: none;
+	margin-left: 20px;
+}
+.postText ul.gallery {
+	margin-left: -20px;
+}
+.singlePost .postText p{
+	float: none;
+}
+.postBlog3 .postText {
+	margin-top: 10px;
+}
+.postLink {
+	float: right;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+.postLink .btnBefore, .postLink .btnAfter{
+	border-radius: 5px;
+}
+.postImage .videoIframe iframe {
+    width: 100% !important;
+    height: 360px !important;
+}
+/** Common Style End **/
+/** Blog Layout 1 **/
+.postBlog1 .postDate {
+	float: left;
+	width: 60px;
+	text-align: center;
+}
+.postBlog1 .postDate.postDateFormat {
+	position: static;
+	margin-left: 0;
+	margin-top: 0;
+	margin-bottom: 10px;
+	float: none;
+	height: 30px;
+}
+.postCreagory a p {
+	color:#e32831;
+	font-size: 12px;
+}
+.postBlog1 .postDate p {
+	color: white;
+	font-family: 'SourceSansSemiBold';
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 16px;
+	margin-bottom: 0;
+}
+.postBlog1 .postDate .dayMonth {
+	padding: 7px 0;
+	/* background-color: #e32831 */
+}
+.postBlog1 .postDate .year {
+	padding: 7px 0;
+	/* background-color: #b92424 */
+}
+.postBlog1 .postDetails {
+	margin-left: 75px;
+}
+.postBlog1 .postDetails.noDate{
+	margin-left:0;
+}
+.postBlog1.blogStyle2 .postDetails {
+	margin-left: 0;
+}
+.postBlog1 .postDetails h2 {
+	margin-bottom: 10px;
+}
+.postBlog1 .postCreagory a {
+	float: left;
+	margin-left: 0;
+	margin-bottom: 20px;
+}
+.postBlog1 .postCreagory a:first-child {
+	margin-left: 0;
+}
+.postBlog1 .postImage {
+	margin-bottom: 20px;
+}
+.postBlog1 .postText {
+	margin-bottom: 0;
+}
+.embedBlock iframe {
+	width: 100%;
+}
+/** Blog Layout 1 End **/
+/** Blog Layout 2 **/
+.postBlog2 .postImage {
+	margin-bottom: 20px;
+}
+.postBlog2 .postDate {
+	float: left;
+	width: 60px;
+	text-align: center;
+}
+.postBlog2 .postDate p {
+	color: white;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 16px;
+	margin-bottom: 0;
+}
+.blogStyle2 .postDate {
+	position: absolute;
+	margin-top: -69px;
+	width: auto !important;
+	margin-left: -10px;
+}
+.blogStyle2 .postDate .dayMonth {
+	padding: 7px 10px;
+}
+.blogStyle2 .like {
+	height: 23px;
+	background: #b92424;
+	padding: 7px 0px 0 10px;
+	width: 190px;
+}
+.blogStyle2 .dayMonth {
+	float: left;
+}
+.postBlog2 .postDate .dayMonth {
+	padding: 7px 0;
+	/* background-color: #e32831 */
+}
+.postBlog2 .postDate .year {
+	padding: 7px 0;
+	/* background-color: #b92424 */
+}
+.postBlog2 .postCreagory a {
+	float: left;
+	margin-left: 25px;
+	margin-bottom: 20px;
+}
+.postBlog2 .postCreagory a:first-child {
+	margin-left: 0;
+}
+.postBlog2 .postDetails {
+	margin-left: 75px;
+}
+.postBlog2 .postDetails.noDate{
+	margin-left:0;
+}
+.postBlog2 .postDetails h2 {
+	margin-bottom: 10px;
+}
+.postBlog2 .postText {
+	margin-bottom: 20px;
+}
+/** Blog Layout 2 End **/
+/** Blog Layout 3 **/
+.postBlog3 {
+	padding-bottom: 18px;
+	border-bottom: 1px solid #d0d0d0;
+	margin-bottom: 20px;
+}
+.postBlog3 .postType {
+	width: 27px;
+	height: 88px;
+	border-right: 1px solid #d0d0d0;
+	float: left;
+	margin-right: 10px;
+}
+.postBlog3.imagePost .postType div {
+	background-image: url('../../img/blog/image.png');
+	width: 19px;
+	height: 19px;
+	opacity: 0.5;
+	margin-top: 34px;
+}
+.postBlog3.sliderPost .postType div {
+	background-image: url('../../img/blog/slider.png');
+	width: 19px;
+	height: 18px;
+	opacity: 0.5;
+	margin-top: 34px;
+}
+.postBlog3.videoPost .postType div {
+	background-image: url('../../img/blog/video.png');
+	width: 19px;
+	height: 15px;
+	opacity: 0.5;
+	margin-top: 36px;
+}
+.postBlog3 .postImage {
+	float: left;
+	width: 134px;
+	border: 3px solid #e3e3e3;
+	overflow: hidden;
+	margin-right: 17px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.postBlog3 .postDetails {
+	float: left;
+	position: relative;
+}
+.postBlog3 .postDetails h5 {
+	margin-bottom: 5px;
+}
+.postBlog3 .postDetails .postCreagory a {
+	float: left;
+	margin-left: 25px;
+	margin-bottom: 5px;
+}
+.postBlog3 .postDetails .postCreagory a:first-child {
+	margin-left: 0;
+}
+.postBlog3 .postDetails .postDate {
+	position: absolute;
+	top: 8px;
+	right: 0;
+}
+.postBlog3 .postDetails .postText p {
+	float: left;
+}
+.postBlog3 .postDetails .postText a {
+	float: right;
+}
+.postSorting {
+	display: block;
+	position: relative;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #d0d0d0;
+	margin-bottom: 20px;
+}
+.postSorting h6 {
+	color: #d0d0d0;
+	float: left;
+	margin-bottom: 0;
+}
+.postSorting button {
+	float: right;
+	border: none;
+	background: none;
+}
+.postSorting button p {
+	color: #3b3b3b;
+	float: left;
+	font-size: 12px;
+	line-height: 14px;
+}
+.postSorting button span {
+	float: left;
+	background-image: url('../../img/blog/filterArrow.png');
+	width: 8px;
+	height: 7px;
+	margin-top: 5px;
+	margin-left: 7px;
+}
+.filterMenu {
+	position: absolute;
+	z-index: 1;
+	right: 0;
+	top: 21px;
+	border: 1px solid #dadada;
+	background-color: #fcfcfc;
+	width: 120px;
+}
+.filterMenu li {
+	border-top: 1px solid #dadada;
+	padding: 9px 0 10px;
+	margin: 0 10px;
+}
+.filterMenu li:first-child {
+	border-top: 3px solid #e32831;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 0;
+}
+.filterMenu li p {
+	color: #3b3b3b;
+	font-size: 11px;
+	line-height: 13px;
+	margin-left: 10px;
+	float: left;
+	margin-bottom: 0;
+}
+.filterMenu li span {
+	float: left;
+}
+.filterImage p {
+	margin-top: 3px;
+}
+.filterImage span {
+	background-image: url('../../img/blog/image.png');
+	width: 19px;
+	height: 19px;
+}
+.filterSlider p {
+	margin-top: 2px;
+}
+.filterSlider span {
+	background-image: url('../../img/blog/slider.png');
+	width: 19px;
+	height: 18px;
+}
+.filterVideo p {
+	margin-top: 1px;
+}
+.filterVideo span {
+	background-image: url('../../img/blog/video.png');
+	width: 19px;
+	height: 15px;
+}
+.span12 .postBlog3 .postDetails {
+	width: 745px;
+}
+.span12 .postBlog3 .postDetails .postText p {
+	width: 600px;
+}
+.span9 .postBlog3 .postDetails {
+	width: 505px;
+}
+.span9 .postBlog3 .postDetails .postText p {
+	width: 385px;
+}
+/** Blog Layout 3 End **/
+/** Blog Layout 4 End **/
+.postBlog4 .postDateCreagory {
+	float: left;
+	width: 100px;
+}
+.postBlog4 .postDate {
+	/* background: #e32831 */
+	position: relative;
+	display: table;
+	clear: both;
+	margin-bottom: 30px;
+	width: 100%;
+	box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.2);
+}
+.postBlog4 .postDate:after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: solid transparent;
+	/* border-top-color: #e32831 */
+	border-width: 15px 15px 0 0;
+	bottom: -15px;
+	left: 20px;
+	z-index: 1;
+	-webkit-transform: rotate(0.05deg);
+	-moz-transform: scale(1.1);
+	-o-transform: rotate(0.05deg);
+	transform: rotate(0.05deg);
+}
+.postBlog4 .postDate .innerBorder {
+	margin: 5px;
+	border: 1px dashed #882222;
+	position: relative;
+}
+.postBlog4 .postDate .day {
+	float: left;
+	border-right: 1px solid #962727;
+	margin: 10px 0;
+	padding: 0 4px 0 0px;
+	width: 34px;
+}
+.postBlog4 .postDate .day p {
+	color: white;
+	font-family: 'Arial';
+	font-weight: bold;
+	font-size: 26px;
+	line-height: 20px;
+	margin-bottom: 0;
+}
+.postBlog4 .postDate .day span {
+	color: white;
+	font-family: 'Arial';
+	font-size: 7px;
+	line-height: 7px;
+	display: block;
+	text-transform: uppercase;
+}
+.postBlog4 .postDate .monthYear {
+	float: left;
+	border-left: 1px solid #cf6060;
+	margin: 10px 0;
+	padding: 0 0px 0 4px;
+	width: 44px;
+}
+.postBlog4 .postDate .monthYear p {
+	font-family: 'Arial';
+	font-weight: bold;
+	text-align: center;
+	font-size: 16px;
+	line-height: 13px;
+	color: white;
+	display: block;
+	margin-bottom: 0;
+}
+.postBlog4 .postDate .dottedTriangle {
+	position: absolute;
+	height: 10px;
+	width: 11px;
+	border-left: 1px dashed #822;
+	bottom: -11px;
+	left: 18px;
+	border-top: 1px solid #E32831;
+}
+.postBlog4 .postDate .dottedTriangle span {
+	height: 13px;
+	display: block;
+	border-left: 1px dashed #822;
+	margin-left: 5px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.postBlog4 .postCreagory {
+	text-align: right;
+}
+.postBlog4 .postCreagory a {
+	margin-bottom: 0;
+	display: inline-block;
+}
+.postBlog4 .postCreagory p small {
+	color: #2a2a2a;
+}
+.postBlog4 .postDetails {
+	margin-left: 115px;
+}
+.postBlog4 .postImage {
+	margin-bottom: 15px;
+}
+.postBlog4 .postDetails h2 {
+	margin-bottom: 15px;
+}
+.postBlog4 .PostCategories, .postBlog4 .postTags, .postBlog4 .postViews{
+	margin-left: 0px !important;
+	float: right;
+	margin-bottom: 3px;
+}
+.postBlog4 .PostCategories a,.postBlog4 .postTags a{
+	float:left;
+	margin-bottom: 0px;
+}
+/** Blog Layout 4 End **/

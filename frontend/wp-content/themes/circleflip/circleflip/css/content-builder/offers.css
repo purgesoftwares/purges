@@ -1,0 +1,65 @@
+.offerPost{
+	margin-bottom: 20px;
+}
+.offerPost img{
+	width: 100%;
+}
+.offerPostContent {
+	background: #fafafa;
+	border: 1px solid #ededed;
+}
+.offerPostContent .offers-title-text{
+	margin: 0;
+	padding: 20px;
+	border-bottom: 1px solid #ededed;
+}
+.offerDate, .offerUsers{
+	display: inline-block;
+}
+.offerDate{
+	padding: 0px 10px 0px 20px;
+	border-right: 1px solid #949494;
+}
+.offerUsers{
+	padding: 20px 20px 0px 10px;
+}
+.offerDate span, .offerDate p, .offerUsers span, .offerUsers p{
+	float: left;
+	margin-bottom: 0;
+	color: #949494;
+}
+.offerDate span, .offerUsers span{
+	margin-right: 10px;
+}
+.offerDate p, .offerUsers p{
+	font-size: 14px;
+}
+.offerPostLastRow{
+	margin-bottom: 20px;
+}
+.offerPrice{
+	font-family: 'sourceSansSemiBold';
+	font-size: 20px;
+	color: #2a2a2a;
+	padding: 31px 0px 0px 20px;
+	float: left;
+}
+.offerLink{
+	padding: 25px 20px 0px 0px;
+	float: right;
+}
+.offerLink a{
+	display: block;
+	color: white;
+	background: #6dc82b;
+	padding: 7px 10px;
+	border-radius: 5px;
+	transition: 0.3s ease;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+}
+.offerLink a:hover{
+	background: #4f4f4f;
+}

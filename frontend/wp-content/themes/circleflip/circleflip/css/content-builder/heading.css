@@ -1,0 +1,18 @@
+.custom span img,.headerDot span img {
+	margin-right: 10px;
+	margin-top: 3px;
+}
+.custom span img.headingRight,.headerDot span img.headingRight{
+	margin-right: 0px;
+	margin-left: 20px;
+	margin-top: 3px;
+}
+.headerDot.center,.alignCenter .custom , .alignRight .custom{
+	display: inline-block;
+}
+.headerDot{
+	float:left;
+}
+h1.bold,h2.bold,h3.bold,h4.bold,h5.bold,h6.bold{
+	font-family: 'SourceSansSemiBold';
+}

@@ -1,0 +1,85 @@
+.landContainer{
+	width: 970px;
+	margin: 0 auto;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	overflow:hidden;
+	background: #ffffff;
+}
+.LandContent{
+	margin: 0 auto 40px;
+	display: table;
+}
+.LogoLand{
+	margin: 40px auto;
+	display: block;
+	width: 235px;
+}
+.landHead{
+	text-align: center;
+	margin-bottom: 40px;
+}
+.landHead h2{
+	color: #444444;
+	font-size:18px;
+	font-family: 'sourceSans';	
+}
+.LandContent > div:first-child{
+	margin-left: 0;
+}
+.LandContent > div{
+	float: left;
+	margin-left: 50px;
+}
+.LandContent a{
+	text-decoration: none;
+	font-size: 14px;
+	/* color: #e32831 */
+	padding: 12px 25px;
+	border: 1px solid #e5353d;
+	border-radius: 5px;
+	margin: 0 auto;
+	display: table;
+	margin-top: 30px;
+	font-family: 'sourceSans';
+}
+.landScreen{
+	position: relative;
+	margin-bottom: 20px;
+}
+.landImageScreen{
+	position: absolute;
+	margin: auto;
+	overflow: hidden;
+	top: 6%;
+	left: -1px;
+	right: 0;
+	width: 92%;
+	height: 63%;
+}
+.landImageScreen img{
+	max-width: 100%;
+	position: relative;
+	top: 0;
+	transition: all 5s linear;
+	-webkit-transition: all 5s linear;
+	-moz-transition: all 5s linear;
+	-o-transition: all 5s linear;
+}
+#landingBody{
+	margin: 0;
+}
+#LandBackground{
+	width: 100%;
+	position: fixed;
+	height: 100%;
+	z-index: -1;
+	background: url('../img/backgroundLanding.png') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}

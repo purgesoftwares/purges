@@ -1,0 +1,1804 @@
+/* =Classes
+ -------------------------------------------------------------- */
+header {
+	z-index: 1010;
+}
+header p, header ul, header li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.headerWrapper .container .headerRow {
+	margin-left: -10px;
+	margin-right: -10px;
+}
+.headerWrapper .container .headerRow:before, .headerWrapper .container .headerRow:after {
+	content: '';
+	display: table;
+	line-height: 0;
+}
+.headerWrapper .container .headerRow:after {
+	clear: both;
+}
+.headerLeft {
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.headerRight {
+	float: right;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.headerCenter {
+	clear: both;
+	float: none;
+	margin: 0 auto;
+	text-align: center;
+}
+/** Classes End **/
+/* =Overlayed Header
+ -------------------------------------------------------------- */
+@media (min-width: 768px) {
+	header.overlayedHeader {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+	header.overlayedHeader.adminTop {
+		top: 32px;
+	}
+	body.slideBody header.overlayedHeader.adminTop {
+		top: 0;
+	}
+	header.overlayedHeader:not(.activeSticky) .topHeader, header.overlayedHeader:not(.activeSticky) .mainHeader {
+		background-color: transparent !important;
+		border-bottom: 0;
+	}
+}
+/** Overlayed Header End **/
+/* =Logo
+ -------------------------------------------------------------- */
+.logoWrapper {
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.logoBuilder img {
+	position: absolute;
+}
+/** Logo End **/
+/* =Menu
+ -------------------------------------------------------------- */
+.headerMenu .toggleMenuBtn {
+	display: none;
+	padding: 7px 8px 7px 9px;
+	border: none;
+	font-size: 17px;
+	width: 17px;
+}
+.headerMenu .closeMenu {
+	display: none;
+}
+.headerMenu .menuContent {
+	display: block;
+}
+.headerMenu li {
+	margin-bottom: 0;
+}
+.headerMenu .menuContent > li {
+	display: inline-block;
+	margin-bottom: 0;
+	position: relative;
+	vertical-align: middle;
+}
+.headerMenu .menuContent > li:first-child {
+	margin-left: 0;
+}
+.headerMenu .menuContent > li > a {
+	position: relative;
+	padding-left: 17px;
+	padding-right: 17px;
+	text-align: center;
+}
+.headerMenu .menuContent > li > a:after {
+	content: '';
+	position: absolute;
+	height: 3px;
+	background-color: #E32831;
+	width: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	transition: 0.3s ease;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+}
+.headerMenu .menuContent > li:hover > a:after {
+	width: 100%;
+}
+.headerMenu .menuContent a {
+	font-size: 15px;
+	line-height: 19px;
+	display: block;
+	white-space: nowrap;
+	transition: 0.3s ease;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+}
+.headerMenu .menuContent a i {
+	font-size: 12px;
+	line-height: 17px;
+}
+/*Sub Menu*/
+.headerMenu li.menu-parent > .sub-menu {
+	left: -9999px;
+	z-index: 2;
+	position: absolute;
+	top: 100%;
+	min-width: 100%;
+	margin-top: 5px;
+	background-color: #fff;
+	transition: margin-top 0.3s ease;
+	-webkit-transition: margin-top 0.3s ease;
+	-moz-transition: margin-top 0.3s ease;
+	-o-transition: margin-top 0.3s ease;
+	-ms-transition: margin-top 0.3s ease;
+}
+.headerMenu li.menu-parent:hover > .sub-menu {
+	left: 0;
+	margin-top: 0;
+}
+.headerMenu .sub-menu li.menu-parent > .sub-menu {
+	top: 0;
+}
+.headerMenu .sub-menu li.menu-parent:hover > .sub-menu {
+	left: 100%;
+}
+.headerMenu .sub-menu li {
+	display: block;
+	text-align: left;
+	position: relative;
+}
+.headerMenu .sub-menu a {
+	padding: 12px 50px 12px 20px;
+	color: #5a5a5a;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+.headerMenu .sub-menu > li:first-child > a {
+	border-top: 1px solid #ccc;
+}
+.headerMenu .sub-menu > li:last-child > a {
+	border-bottom: 1px solid #ccc;
+}
+.headerMenu .sub-menu li:hover > a, .headerMenu .sub-menu li.active > a {
+	background-color: #F0EFEE;
+	color: #E32831;
+}
+.sub-arrow {
+	position: absolute;
+	right: 10px;
+	margin-top: 1px;
+}
+/*Search Form*/
+.headerMenuSearch {
+	position: relative;
+}
+.headerMenuSearch > span {
+	width: 30px;
+	height: 30px;
+	display: block;
+	text-align: center;
+	line-height: 30px;
+	font-size: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	cursor: pointer;
+	transition: opacity 0.5s ease, color 0.5s ease;
+	-webkit-transition: opacity 0.5s ease, color 0.5s ease;
+	-moz-transition: opacity 0.5s ease, color 0.5s ease;
+	-o-transition: opacity 0.5s ease, color 0.5s ease;
+	-ms-transition: opacity 0.5s ease, color 0.5s ease;
+}
+.headerMenuSearch .searchform {
+	position: absolute;
+	display: none;
+	top: 100%;
+	right: 0;
+	margin: 0;
+	height: auto;
+	z-index: 1;
+	border: 10px solid #F9F9F9;
+	width: 256px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	animation: creiden_popup 0.5s;
+	-webkit-animation: creiden_popup 0.5s;
+	-moz-animation: creiden_popup 0.5s;
+	-o-animation: creiden_popup 0.5s;
+}
+.headerMenuSearch.openSearch .searchform {
+	display: block;
+}
+.headerMenuSearch .searchform input {
+	border-radius: 0;
+	border-radius: 0;
+	padding: 4px 6px;
+	height: 30px;
+	line-height: 1.2em;
+	margin-bottom: 0;
+	float: left;
+	box-sizing: border-box;
+	-webkit-2box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.headerMenuSearch .searchform button {
+	background-color: #1F1F1F;
+	border: none;
+	color: white;
+	width: 30px;
+	height: 30px;
+	float: left;
+}
+.headerMenu .menu-item-language img.iclflag {
+	margin-right: 0;
+}
+/*Search Form End*/
+/** Menu End **/
+/* =Ubber Menu
+ -------------------------------------------------------------- */
+.ubermenu-accessible input:not(:hover):focus, .ubermenu-accessible:not(:hover)
+.ubermenu-target:focus {
+	outline: none;
+	-webkit-outline: none;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+}
+.headerMenu .ubermenu {
+	z-index: 1;
+	background: none;
+	border: none;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+}
+.headerMenu .ubermenu-items-align-left.ubermenu-horizontal .ubermenu-item.ubermenu-item-level-0, .headerMenu.ubermenu.ubermenu-horizontal .ubermenu-item.ubermenu-align-left {
+	float: none;
+	outline: none !important;
+	vertical-align: inherit;
+}
+.headerMenu .headerMenuSearch {
+	display: inline-block;
+}
+.ubermenu .ubermenu-target {
+	background: none;
+}
+.headerMenu .ubermenu-nav > .ubermenu-item > a {
+	padding-left: 17px;
+	padding-right: 17px;
+}
+.headerMenu .ubermenu-nav a {
+	position: static;
+	transition: 0.3s ease;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+}
+.headerMenu .ubermenu .ubermenu-colgroup .ubermenu-column, .headerMenu .ubermenu .ubermenu-custom-content-padded, .headerMenu .ubermenu .ubermenu-nonlink, .headerMenu .ubermenu .ubermenu-retractor, .headerMenu .ubermenu .ubermenu-submenu-padded, .headerMenu .ubermenu .ubermenu-submenu-type-stack > .ubermenu-item-normal > .ubermenu-target, .headerMenu .ubermenu .ubermenu-target, .headerMenu .ubermenu .ubermenu-widget, .headerMenu .ubermenu-responsive-toggle {
+	padding: 0;
+	font-size: 15px;
+	line-height: 17px;
+}
+.headerMenu .ubermenu-sub-indicators .ubermenu-has-submenu-drop > .ubermenu-target:after {
+	content: '\e873';
+	font-family: 'fontello';
+	position: static;
+	font-size: 12px;
+	line-height: 17px;
+	margin-left: 4px;
+	height: 1em;
+	vertical-align: middle;
+	margin-top: 0;
+}
+.headerMenu .ubermenu .ubermenu-item .ubermenu-submenu-drop {
+	background-color: white;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	border: 1px solid #ccc;
+	border-top: 2px solid #E32831;
+}
+.headerMenu .ubermenu .ubermenu-submenu a, .headerMenu .ubermenu .ubermenu-submenu-type-stack > .ubermenu-item-normal > .ubermenu-target {
+	font-size: 14px;
+}
+.headerMenu .ubermenu .ubermenu-submenu a {
+	color: #808080;
+}
+.headerMenu .ubermenu .ubermenu-submenu a:hover {
+	color: #e32831;
+}
+.headerMenu .ubermenu .ubermenu-submenu-type-stack > .ubermenu-item-normal > .ubermenu-target {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.headerMenu .ubermenu .ubermenu-submenu .ubermenu-submenu a:before {
+	content: '';
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	vertical-align: middle;
+	border-radius: 50%;
+	background-color: #E32831;
+	margin-right: 15px;
+}
+.headerMenu .ubermenu .ubermenu-submenu .ubermenu-column {
+	padding: 11px 27px;
+}
+.headerMenu .ubermenu .ubermenu-submenu-type-stack > .ubermenu-item.ubermenu-column-auto {
+	padding: 0;
+}
+.headerMenu .ubermenu .ubermenu-retractor {
+	display: none !important;
+}
+.headerCenter.headerMenu .ubermenu {
+	text-align: center;
+}
+.headerMenu .ubermenu .ubermenu-submenu .ubermenu-current-menu-item > a {
+	color: #e32831;
+}
+/** Ubber Menu End **/
+/* =Toggled Menu
+ -------------------------------------------------------------- */
+.toggledMenu .menuWrapper {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	overflow: auto;
+	background-color: #333;
+	border-left: 2px solid #E32831;
+	color: white;
+	text-align: left;
+	z-index: 10;
+	padding: 40px 30px 0;
+	width: 270px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	right: -270px;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+}
+.toggledMenu.openMenu .menuWrapper {
+	right: 0;
+}
+.toggledMenu.adminTop .menuWrapper {
+	top: 32px;
+}
+body {
+	left: 0;
+}
+body.animateBody {
+	position: relative;
+	transition: left 0.5s, right 0.5s;
+	-webkit-transition: left 0.5s, right 0.5s;
+	-moz-transition: left 0.5s, right 0.5s;
+	-o-transition: left 0.5s, right 0.5s;
+	-ms-transition: left 0.5s, right 0.5s;
+}
+body.slideBody {
+	left: -270px;
+}
+.toggledMenu .menuContent > li {
+	margin-bottom: 25px;
+}
+.toggledMenu .menuContent > li > a {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.toggledMenu .menuContent li a {
+	display: block;
+}
+.toggledMenu .menuContent li a i {
+	display: none;
+}
+.toggledMenu .sub-menu {
+	padding-left: 15px;
+}
+.toggledMenu .sub-menu li {
+	list-style: disc;
+	font-size: 12px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+.toggledMenu .headerMenuSearch {
+	display: none;
+}
+.toggleMenuBtn {
+	padding: 3px 6px;
+	border-radius: 50%;
+	border: 4px solid transparent;
+	cursor: pointer;
+	width: 14px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.toggledMenu:after {
+	content: '';
+	height: 100%;
+	width: 0;
+	display: inline-block;
+	vertical-align: middle
+}
+.closeMenu {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 23px;
+	border: solid rgba(0, 0, 0, 0);
+	width: 0;
+	height: 0;
+	border-width: 50px 0px 0 50px;
+	border-top-color: #FFF;
+	cursor: pointer;
+	transition: 0.4s ease 0.2s;
+	-webkit-transition: 0.4s ease 0.2s;
+	-moz-transition: 0.4s ease 0.2s;
+	-o-transition: 0.4s ease 0.2s;
+	-ms-transition: 0.4s ease 0.2s;
+}
+.closeMenu span {
+	position: absolute;
+	top: -45px;
+	color: #000;
+	right: 3px;
+	-webkit-backface-visibility: visible;
+	-moz-backface-visibility: visible;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transition: 0.3s ease;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+}
+.closeMenu:hover {
+	border-top-color: #5C5C5C;
+}
+.closeMenu:hover span {
+	color: white;
+}
+.toggledMenu .cart-dropdown {
+	display: none;
+}
+/* =Uber Menu ---*/
+.toggledMenu .ubermenu-items-align-left.ubermenu-horizontal .ubermenu-item.ubermenu-item-level-0, .toggledMenu .ubermenu.ubermenu-horizontal .ubermenu-item.ubermenu-align-left {
+	margin-bottom: 25px;
+	float: none;
+	display: block;
+}
+.toggledMenu .ubermenu-sub-indicators .ubermenu-has-submenu-drop > .ubermenu-target, .toggledMenu .ubermenu-nav > li > a {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: 0;
+}
+.toggledMenu .ubermenu-sub-indicators .ubermenu-has-submenu-drop > .ubermenu-target:after {
+	display: none;
+}
+.toggledMenu .ubermenu .ubermenu-item .ubermenu-submenu-drop {
+	position: static;
+	display: block;
+	max-height: none;
+	height: auto;
+	margin-top: 0;
+	opacity: 1;
+	visibility: visible;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+}
+.toggledMenu .ubermenu .ubermenu-colgroup .ubermenu-column, .toggledMenu .ubermenu .ubermenu-custom-content-padded, .toggledMenu .ubermenu .ubermenu-nonlink, .toggledMenu .ubermenu .ubermenu-retractor, .toggledMenu .ubermenu .ubermenu-submenu-padded, .toggledMenu .ubermenu .ubermenu-submenu-type-stack > .ubermenu-item-normal > .ubermenu-target, .toggledMenu .ubermenu .ubermenu-target, .toggledMenu .ubermenu .ubermenu-widget, .toggledMenu .ubermenu-responsive-toggle {
+	padding: 0;
+}
+.toggledMenu .ubermenu .ubermenu-submenu .ubermenu-column {
+	float: none;
+	display: block;
+	margin-top: 20px;
+}
+.toggledMenu .ubermenu .ubermenu-submenu .ubermenu-column a:before {
+	content: '';
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	vertical-align: middle;
+	background-color: white;
+	margin-right: 10px;
+}
+.toggledMenu .ubermenu .ubermenu-submenu .ubermenu-column a {
+	font-size: 12px;
+}
+.toggledMenu .ubermenu .ubermenu-autocolumn, .toggledMenu .ubermenu .ubermenu-submenu-type-stack {
+	padding: 0;
+}
+.toggledMenu .ubermenu .ubermenu-submenu .ubermenu-submenu-type-stack {
+	margin-left: 15px;
+}
+/*Uber Menu End*/
+/** Toggled Menu End **/
+/* =Header Social
+ -------------------------------------------------------------- */
+.headerSocial {
+	/*transition: height 0.3s ease; 
+	-webkit-transition: height 0.3s ease; 
+	-moz-transition: height 0.3s ease; 
+	-o-transition: height 0.3s ease; 
+	-ms-transition: height 0.3s ease;*/
+}
+.headerSocial ul {
+	height: 100%;
+	font-size: 0;
+}
+.headerSocial ul:after {
+	content: '';
+	display: inline-block;
+	width: 0;
+	height: 100%;
+	vertical-align: middle;
+}
+.headerSocial li {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	margin: 10px 0 10px 17px;
+	text-align: center;
+}
+.headerSocial li:first-child {
+	margin-left: 0;
+}
+.headerSocial li a {
+	display: block;
+}
+.headerSocial li i {
+	font-size: 20px;
+	line-height: 20px;
+	display: block;
+}
+.headerFlip .front {
+	position: absolute;
+	z-index: 0;
+	-webkit-backface-visibility: hidden;
+	-moz-transform: rotateX(0deg) rotateY(0deg);
+	-moz-transform-style: preserve-3d;
+	-moz-backface-visibility: hidden;
+	-webkit-transition: 0.2s ease-in;
+	-moz-transition: 0.2s ease-in;
+	-o-transition: 0.2s ease-in;
+	transition: 0.2s ease-in;
+	width: 100%;
+	height: 100%;
+}
+.headerFlip .back {
+	position: absolute;
+	z-index: 1;
+	-webkit-transform: rotateY(-180deg);
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	-moz-transform: rotateY(-180deg);
+	-moz-transform-style: preserve-3d;
+	-moz-backface-visibility: hidden;
+	-webkit-transition: 0.2s ease-in;
+	-moz-transition: 0.2s ease-in;
+	-o-transition: 0.2s ease-in;
+	transition: 0.2s ease-in;
+	width: 100%;
+	height: 100%;
+}
+.headerFlip:hover .back {
+	z-index: 1000;
+	-webkit-transform: rotateX(0deg) rotateY(0deg);
+	-moz-transform: rotateX(0deg) rotateY(0deg);
+}
+.headerFlip:hover .front {
+	z-index: 900;
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+}
+/*Header Social End*/
+/* =Header Spacer
+ -------------------------------------------------------------- */
+.topHeader .headerSpacer {
+	height: 40px;
+}
+.mainHeader .headerSpacer {
+	height: 60px;
+	transition: height 0.3s ease; 
+	-webkit-transition: height 0.3s ease; 
+	-moz-transition: height 0.3s ease; 
+	-o-transition: height 0.3s ease; 
+	-ms-transition: height 0.3s ease; 
+}
+.headerSpacer .headerSpacerVert {
+	display: none;
+}
+/*Header Spacer End*/
+/* =Header Text
+ -------------------------------------------------------------- */
+.headerText.headerCenter {
+	text-align: center;
+}
+.headerText p {
+	margin-bottom: 0;
+	font-size: 15px;
+	line-height: 19px;
+	display: table-cell;
+	vertical-align: middle;
+}
+.topHeader .headerText p {
+	height: 40px;
+}
+.mainHeader .headerText p {
+	height: 60px;
+	transition: height 0.3s ease; 
+	-webkit-transition: height 0.3s ease; 
+	-moz-transition: height 0.3s ease; 
+	-o-transition: height 0.3s ease; 
+	-ms-transition: height 0.3s ease; 
+}
+/** Header Text End **/
+/* =Header Button
+ -------------------------------------------------------------- */
+.headerButton {
+	font-size: 0;
+	text-align: center;
+}
+.headerButton:after {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+	width: 0;	
+}
+.headerButton a {
+	position: relative;
+	z-index: 0;
+	border-radius: 4px;
+	overflow: hidden;
+	margin-bottom: 0;
+	font-size: 15px;
+	line-height: 19px;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 5px 10px;
+	transition: 0.3s ease;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+}
+.lightContent .headerButton a:hover, .darkContent .headerButton a:hover {
+	background-color: transparent;
+}
+.topHeader .headerButton {
+	height: 40px;
+}
+.mainHeader .headerButton {
+	height: 60px;
+	transition: height 0.3s ease; 
+	-webkit-transition: height 0.3s ease; 
+	-moz-transition: height 0.3s ease; 
+	-o-transition: height 0.3s ease; 
+	-ms-transition: height 0.3s ease; 
+}
+.headerButton a .btnAfter, .headerButton a .btnBefore {
+	content: '';
+	position: absolute;
+	height: 0;
+	width: 0;
+	border-style: solid;
+	border-width: 0;
+	border-radius: 0;
+	transition: 0;
+	-webkit-transition: 0;
+	-moz-transition: 0;
+	-o-transition: 0;
+	-ms-transition: 0;
+	border-radius: 4px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.headerButton a .btnAfter {
+	left: 0;
+	top: 0;
+}
+.headerButton a .btnBefore {
+	right: 0;
+	bottom: 0;
+}
+.headerButton a:hover .btnAfter, .headerButton a:hover .btnBefore {
+	height: 100%;
+	width: 100%;
+	transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+	-webkit-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+	-moz-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+	-o-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+	-ms-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+}
+.headerButton a:hover .btnAfter {
+	border-width: 1px 1px 0 0;
+}
+.headerButton a:hover .btnBefore {
+	border-width: 0 0 1px 1px;
+}
+/** Header Button End **/
+/* =Top Header
+ -------------------------------------------------------------- */
+.topHeader .headerMenu .menuContent > li > a, .topHeader .headerCenter.headerMenu .menuContent > li > a, .topHeader .headerMenu .ubermenu-nav > .ubermenu-item > a {
+	padding: 11px 10px 10px;
+}
+.topHeader .toggleMenuBtn {
+	margin: 3px 0;
+}
+.topHeader .headerMenuSearch > span {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.topHeader .headerMenuSearch > span {
+	padding-left: 0;
+}
+.topHeader .logoWrapper {
+	width: auto !important;
+	height: 34px !important;
+	font-size: 0;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+.topHeader .logoWrapper a:after {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	width: 0;
+	vertical-align: middle;
+}
+.topHeader .logoWrapper img {
+	display: inline-block;
+	position: static;
+	max-height: 34px;
+	width: auto !important;
+	vertical-align: middle;
+}
+.topHeader .headerImage img {
+	max-height: 40px;
+}
+.topHeader .toggledMenu {
+	height: auto !important;
+}
+/*Top Header End*/
+/* =Main Header
+ -------------------------------------------------------------- */
+.mainHeader .headerMenu .menuContent > li > a, .mainHeader .headerMenu .ubermenu-nav > .ubermenu-item > a {
+	padding-top: 20px;
+	padding-bottom: 21px;
+}
+.mainHeader .headerMenuSearch > span {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.mainHeader .headerSocial li {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	/*transition: margin 0.3s ease; 
+	-webkit-transition: margin 0.3s ease; 
+	-moz-transition: margin 0.3s ease; 
+	-o-transition: margin 0.3s ease; 
+	-ms-transition: margin 0.3s ease;*/
+}
+.mainHeader .toggleMenuBtn {
+	margin-top: 13px;
+	margin-bottom: 13px;
+}
+/*Main Header End*/
+/*= Menu With logo Sibling
+ -------------------------------------------------------------- */
+[class*='logoSiblings'] .headerMenu .menuContent > li > a, [class*='logoSiblings']  .headerMenuSearch > span, [class*='logoSiblings'] .headerMenu .ubermenu-nav > .ubermenu-item > a {
+	display: table-cell;
+	vertical-align: middle;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+[class*='logoSiblings']  .toggleMenuBtn {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+/** Menu With logo Sibling End **/
+/* =Sticky Header
+ -------------------------------------------------------------- */
+header {
+	/*top: -50px;*/
+}
+.defaultHeader {
+	position: relative;
+}
+.rowWrapper {
+	/*position: relative;
+	z-index: 1010;*/
+}
+.justFixed {
+	display: none;
+}
+header.preSticky, header.overlayedHeader.preSticky {
+	top: -50px;
+}
+header.preSticky.activeSticky {
+	position: fixed;
+	z-index: 1010;
+	display: block;
+	width: 100%;
+	top: 0;
+	left: 0;
+	top: 0;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	transition: top 0.5s 0.2s;
+	-webkit-transition: top 0.5s 0.2s;
+	-moz-transition: top 0.5s 0.2s;
+	-o-transition: top 0.5s 0.2s;
+	-ms-transition: top 0.5s 0.2s;
+}
+header.preSticky.activeSticky.adminTop {
+	top: 32px;
+}
+header.activeSticky .rowWrapper {
+	display: none;
+}
+header.activeSticky .rowWrapper.stickyHeader {
+	display: block;
+}
+header.activeSticky .stickyHeader.lightContent {
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+}
+header.activeSticky .stickyHeader.darkContent {
+	box-shadow: inset 0 -1px 0 0px #E5E5E5;
+	-webkit-box-shadow: inset 0 -1px 0 0px #E5E5E5;
+	-moz-box-shadow: inset 0 -1px 0 0px #E5E5E5;
+}
+header.activeSticky .stickyHeader.mainHeader .logoWrapper {
+	height: 40px !important;
+	width: auto !important;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+header.activeSticky .stickyHeader.topHeader .logoWrapper {
+	height: 34px !important;
+	width: auto !important;
+}
+header.activeSticky .stickyHeader .logoWrapper img {
+	max-height: 100%;
+	width: auto !important;
+	height: auto !important;
+	position: static;
+}
+header.activeSticky .stickyHeader.mainHeader .headerMenu .menuContent > li > a {
+	padding-top: 16px;
+	padding-bottom: 15px;
+}
+header.activeSticky .stickyHeader.mainHeader .headerMenuSearch > span {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+header.activeSticky .stickyHeader .headerMenu .menuContent > li > a, header.activeSticky .stickyHeader .headerMenuSearch > span, header.activeSticky .stickyHeader .headerMenu .menuContent, header.activeSticky .stickyHeader .headerMenu.responsiveCheck {
+	height: auto;
+}
+header.activeSticky .stickyHeader.mainHeader .headerMenu .menuContent > li > a {
+	padding-top: 16px;
+	padding-bottom: 15px;
+}
+header.activeSticky .stickyHeader.mainHeader .toggledMenu, header.activeSticky .stickyHeader.mainHeader .headerSocial {
+	height: 50px;
+}
+header.activeSticky .stickyHeader.mainHeader .headerImage img {
+	max-height: 50px;
+}
+header.activeSticky .stickyHeader.mainHeader .headerSocial li {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+header.activeSticky .stickyHeader.mainHeader .headerSpacer, header.activeSticky .stickyHeader.mainHeader .headerText p, header.activeSticky .stickyHeader.mainHeader .headerButton {
+	height: 50px;
+}
+/*Sticky Header End*/
+/* =Elements Alignements
+ -------------------------------------------------------------- */
+.headerCenter.logoWrapper {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.headerImage.headerRight {
+	text-align: right;
+}
+/** Elements Alignements End **/
+/* =Light Content
+ -------------------------------------------------------------- */
+.lightContent .headerMenu .menuContent > li > a, .lightContent .headerText p, .lightContent .headerMenuSearch > span, .lightContent .toggleMenuBtn, .lightContent .headerMenu .ubermenu-nav > .ubermenu-item > a , .lightContent .headerSocial li i, .lightContent .sideToggle, .lightContent .headerButton a:hover, .lightContent .cart-dropdown .cart-dropdown-header span, .lightContent .cart-dropdown .cart-dropdown-header span:hover {
+	color: white;
+}
+.lightContent .headerMenu .menuContent > li > a, .lightContent .headerMenuSearch > span, .lightContent .headerMenu .ubermenu-nav > .ubermenu-item > a,.lightContent .headerSocial .back, .lightContent .cart-dropdown .cart-dropdown-header span {
+	opacity: 0.8;
+}
+.lightContent .headerMenu .menuContent > li:hover > a, .lightContent .headerMenu .menuContent > li.active > a, .lightContent .headerMenuSearch:hover > span, .lightContent .headerMenuSearch.openSearch > span, .lightContent .headerMenu .ubermenu-nav > .ubermenu-item:hover > a, .lightContent .cart-dropdown .cart-dropdown-header span:hover {
+	opacity: 1;
+}
+.lightContent .headerMenu .menuContent > li > a:after, .lightContent .headerMenu .toggleMenuBtn, .lightContent .headerButton a {
+	background-color: white;
+}
+.lightContent .headerMenu .toggleMenuBtn {
+	color: #E32831;
+}
+.lightContent .toggleMenuBtn, .lightContent .headerButton a span {
+	border-color: white;
+}
+.lightContent .headerWrapper, .lightContent .headerCenter {
+	border-color: transparent;
+}
+.lightContent .headerButton a {
+	color: #5a5a5a
+}
+.lightContent .cart-dropdown.openMini .cart-dropdown-header {
+	background-color: #fff !important;
+}
+.lightContent .cart-dropdown.openMini .cart-dropdown-header span {
+	color: #333 !important;
+	opacity: 1;
+}
+/** Light Content End **/
+/* =Dark Content
+ -------------------------------------------------------------- */
+.darkContent {
+	border-bottom: 1px solid #E5E5E5;
+}
+.darkContent .headerMenu .menuContent > li > a, .darkContent .headerText p, .darkContent .headerMenuSearch > span, .darkContent .headerMenu .ubermenu-nav > .ubermenu-item > a, .darkContent .sideToggle, .darkContent .headerButton a:hover {
+	color: #5a5a5a;
+}
+.darkContent .headerMenu .menuContent > li:hover > a, .darkContent .headerMenu .menuContent > li.active > a, .darkContent .headerMenuSearch:hover > span, .darkContent .headerMenuSearch.openSearch > span, .darkContent .headerMenu .ubermenu-nav > .ubermenu-item:hover > a, .darkContent .headerMenu .ubermenu-nav > .ubermenu-item.ubermenu-current-menu-item > a, .darkContent .headerMenu .ubermenu-nav > .ubermenu-item.ubermenu-current-page-parent > a, .darkContent .toggleMenuBtn {
+	color: #e32831;
+}
+.darkContent .headerSocial .front i {
+	color: #333;
+}
+.darkContent .headerSocial .back i {
+	color: #e32831;
+}
+.darkContent .headerMenu .toggleMenuBtn, .darkContent .headerButton a {
+	background-color: #e32831;
+}
+.darkContent .headerMenu .toggleMenuBtn, .darkContent .headerButton a {
+	color: white;
+}
+.darkContent .toggleMenuBtn, .darkContent .headerButton a span {
+	border-color: #E32831;
+}
+/** Dark Content End **/
+
+/* =Responsive
+ -------------------------------------------------------------- */
+@media (max-width: 1199px) and (min-width: 980px) {
+	/** Menu **/
+
+	/** Menu End **/
+	/** Social Icons **/
+	.headerSocial li {
+		margin-left: 10px;
+	}
+	/** Social Icons End **/
+}
+/* =Side Header
+ -------------------------------------------------------------- */
+@media (min-width: 980px) {
+	/** Classes **/
+	.sideHeader .container {
+		width: auto;
+	}
+	.sideHeader .container:after, .sideHeader .container:before {
+		display: none;
+	}
+	.sideHeader .headerLeft {
+		float: none;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.sideHeader .headerRight {
+		float: none;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.sideHeader .headerWrapper .container .headerRow {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	/** Classes End **/
+	.sideHeader {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: -100%;
+		box-shadow: 0 0 2px 0px #000;
+		-webkit-box-shadow: 0 0 2px 0px #000;
+		-moz-box-shadow: 0 0 2px 0px #000;
+		transition: 0.5s;
+		-webkit-transition: 0.5s;
+		-moz-transition: 0.5s;
+		-o-transition: 0.5s;
+		-ms-transition: 0.5s;
+	}
+	.sideHeader.openSideHeader {
+		left: 0 !important;
+	}
+	.sideHeader.adminTop {
+		top: 32px;
+	}
+	.sideHeader .topHeader, .sideHeader .mainHeader {
+		float: right;
+		height: 100%;
+	}
+	.sideHeader .topHeader {
+		width: 50px;
+	}
+	.sideHeader .mainHeader {
+		min-width: 150px;
+		max-width: 240px;
+	}
+	.sideHeader .headerWrapper {
+		position: relative;
+		height: 100%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	}
+	.sideHeader .headerWrapper > div, .sideHeader .headerWrapper .sideBottom > div {
+		margin-bottom: 20px;
+	}
+	.sideHeader .headerWrapper > div:last-child, .sideHeader .headerWrapper .sideBottom > div:last-child {
+		margin-bottom: 0;
+	}
+	.sideBottom {
+		position: absolute;
+		bottom: 10px;
+		left: 0;
+		right: 0;
+		margin-bottom: 0 !important;
+	}
+	.sideHeader .toggledMenu {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.sideHeader .toggledMenu:after {
+		display: none;
+	}
+	/* Side Header Bar */
+	.sideHeader .rowWrapper:first-child {
+		max-width: 50px;
+	}
+	.sideToggle {
+		margin: 0 auto 20px;
+		font-size: 21px;
+		text-align: center;
+		cursor: pointer;
+		width: 21px;
+		height: 21px;
+		padding: 6px;
+		display: none;
+	}
+	.sideHeader .rowWrapper:first-child .sideToggle {
+		display: block;
+	}
+	/* Side Header Bar End */
+	/* Header Social */
+	.sideHeader .headerSocial {
+		text-align: center;
+	}
+	.sideHeader .mainHeader .headerSocial li {
+		margin: 10px 7px 0;
+	}
+	/* Header Social End */
+	/* Menu */
+	.sideHeader .toggledMenu .toggleMenuBtn {
+		margin: 0 auto;
+		display: block;
+	}
+	.sideHeader .headerMenu .menuContent > li {
+		display: block;
+	}
+	.sideHeader .headerMenu .menuContent a {
+		white-space: normal;
+	}
+	.sideHeader .headerMenu .menuContent a i {
+		font-size: 12px;
+		position: absolute;
+		right: 5px;
+		margin-top: -9px;
+		top: 50%;
+	}
+	.sideHeader .headerMenu .menuContent a i.icon-down-open:before {
+		content: '\e875';
+	}
+	.sideHeader .headerMenu li.menu-parent > .sub-menu {
+		top: 0;
+	}
+	.sideHeader .headerMenu li.menu-parent:hover > .sub-menu {
+		left: 100%;
+	}
+	.sideHeader .headerMenu .menuContent > li > a {
+		padding-top: 13px;
+		padding-bottom: 12px;
+	}
+	.sideHeader .headerMenu .menuContent > li > a:after {
+		left: auto;
+		right: 0;
+		top: 0;
+		height: 0;
+		width: 3px;
+	}
+	.sideHeader .headerMenu .menuContent > li:hover > a:after, .sideHeader .headerMenu .menuContent > li.active > a:after {
+		height: 100%;
+	}
+	.sideHeader .headerMenu li.menu-parent > .sub-menu {
+		min-width: 0;
+	}
+	.sideHeader .headerMenu .sub-menu a {
+		white-space: nowrap;
+	}
+	.sideHeader .headerMenu .headerMenuSearch > span {
+		width: auto;
+	}
+	.sideHeader .headerMenu .headerMenuSearch .searchform {
+		top: 0;
+		left: 100%;
+	}
+	.sideHeader .headerMenu .headerMenuSearch {
+		display: block;
+	}
+	.sideHeader [class*="logoSiblings"] .headerMenu, .sideHeader [class*="logoSiblings"] .headerMenu .menuContent > li > a, .sideHeader [class*="logoSiblings"] .headerMenuSearch > span, .sideHeader [class*="logoSiblings"] .headerMenu .menuContent, .sideHeader [class*="logoSiblings"] .headerMenu #megaMenu ul.megaMenu li.menu-item.ss-nav-menu-mega > a, .sideHeader [class*="logoSiblings"] .headerMenu #megaMenu ul.megaMenu li.menu-item.ss-nav-menu-mega > span.um-anchoremulator, .sideHeader [class*="logoSiblings"] .headerMenu #megaMenu .headerMenuSearch > span, .sideHeader [class*="logoSiblings"] .headerMenu .ubermenu-nav > .ubermenu-item > a, .sideHeader [class*="logoSiblings"] .headerSocial, .sideHeader [class*="logoSiblings"] .toggledMenu,.sideHeader [class*="logoSiblings"] .headerSpacer,.sideHeader [class*="logoSiblings"] .headerText, .sideHeader [class*="logoSiblings"] .headerButton {
+		height: auto !important;
+	}
+	.sideHeader .cart-dropdown {
+		display: block;
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.sideHeader .cart-dropdown .cart-dropdown-elements {
+		width: 240px;
+		text-align: left;
+		left: 100%;
+		top: 0;
+		right: auto;
+	}
+	.sideHeader .cart-dropdown .cart-dropdown-elements .miniDetails {
+		width: 144px;
+	}
+	/* Menu End */
+	/* Uber Menu */
+	.sideHeader .headerMenu .ubermenu-items-align-left.ubermenu-horizontal .ubermenu-item.ubermenu-item-level-0, .sideHeader .headerMenu.ubermenu.ubermenu-horizontal .ubermenu-item.ubermenu-align-left {
+		display: block;
+		text-align: center;
+		position: relative;
+	}
+	.sideHeader .headerMenu .ubermenu .ubermenu-item .ubermenu-submenu-drop {
+		border: 1px solid #CCC;
+		border-left: 2px solid #E32831;
+		left: 100%;
+		top: 0;
+		max-height: none;
+		width: auto;
+		white-space: nowrap;
+		padding: 5px 20px;
+	}
+	.sideHeader .headerMenu .ubermenu-nav > .ubermenu-item > a {
+		padding-top: 13px;
+		padding-bottom: 12px;
+	}
+	.sideHeader .headerMenu .ubermenu-sub-indicators .ubermenu-has-submenu-drop > .ubermenu-target:after {
+		content: '\e875';
+		position: absolute;
+		margin-top: -5px;
+		right: 10px;
+	}
+	.sideHeader .headerMenu .ubermenu .headerMenuSearch > span {
+		margin: 0 auto;
+	}
+	.sideHeader .headerMenu .ubermenu .headerMenuSearch > span {
+		width: auto;
+	}
+	.sideHeader .headerMenu .ubermenu .headerMenuSearch .searchform {
+		top: 0;
+		left: 100%;
+	}
+	.sideHeader .headerMenu .ubermenu .ubermenu-submenu .ubermenu-column {
+		float: none;
+		padding: 5px 0;
+	}
+	.sideHeader .headerMenu .ubermenu .ubermenu-autocolumn, .sideHeader .headerMenu .ubermenu .ubermenu-submenu-type-stack {
+		padding-bottom: 0;
+		padding-top: 5px;
+	}
+	.sideHeader .headerMenu .ubermenu .ubermenu-submenu-type-stack > .ubermenu-item.ubermenu-column-auto {
+		padding: 0;
+	}
+	/* Uber Menu End */
+	/* Logo */
+	.sideHeader .topHeader .logoWrapper {
+		width: auto !important;
+		height: auto !important;
+	}
+	.sideHeader .logoWrapper img {
+		position: static;
+		max-height: none;
+		height: auto !important;
+	}
+	/* Logo End */
+	/* Header Text */
+	.sideHeader .rowWrapper .headerText p {
+		height: auto;
+		display: block;
+	}
+	/* Header Text End */
+	/* Header Button */
+	.sideHeader .rowWrapper .headerButton {
+		height: auto;
+		display: block;
+	}
+	.sideHeader .topHeader .headerButton a {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	/* Header Button End */
+	/* Header Spacer */
+	.sideHeader .headerSpacer {
+		width: 100% !important;
+	}
+	.sideHeader .headerSpacer .headerSpacerVert {
+		display: block;
+	}
+	/* Header Spacer End */
+	/* Top Header */
+	.sideHeader .topHeader .headerMenu .menuContent > li > a:after {
+		height: 0;
+		width: 3px;
+		right: 0;
+		left: auto;
+		top: 0;
+		bottom: 0;
+	}
+	.sideHeader .topHeader .headerMenu .menuContent > li.active > a:after {
+		height: 100%;
+	}
+	.sideHeader .topHeader .headerSocial ul:after {
+		display: none;
+	}
+	.sideHeader .topHeader .headerButton:after {
+		display: none;
+	}
+	.sideHeader .topHeader .headerSocial li {
+		display: block;
+		margin: 10px auto 0;
+	}
+	.sideHeader .topHeader .headerSocial li:first-child {
+		margin-top: 0;
+	}
+	.sideHeader .topHeader .logoWrapper {
+		margin-top: 0;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	/* Top Header End */
+	/* Main Header */
+	.sideHeader .mainHeader .headerWrapper {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	.sideHeader .headerMenu {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	.sideHeader .mainHeader .headerMenu .menuContent > li > a, .sideHeader .mainHeader .headerMenu .ubermenu-nav > .ubermenu-item > a {
+		padding-left: 25px;
+		padding-right: 25px;
+		display: block;
+	}
+	.sideHeader .mainHeader .headerMenu .headerMenuSearch > span, .sideHeader .mainHeader .headerMenu .ubermenu > span {
+		padding-top: 7px;
+		padding-bottom: 8px;
+	}
+	/* Main Header End */
+}
+/** Side Header End **/
+@media (max-width: 979px) and (min-width: 768px) {
+	/** Side Header **/
+	.sideToggle {
+		display: none;
+	}
+	/** Side Header End **/
+	/** Menu **/
+	.headerMenu.responsiveCheck:after {
+		content: '';
+		height: 100%;
+		width: 0;
+		display: inline-block;
+		vertical-align: middle
+	}
+	.headerMenu.responsiveCheck .toggleMenuBtn {
+		display: inline-block;
+	}
+	.headerWrapper {
+		position: relative;
+	}
+	.headerMenu.responsiveCheck {
+		position: static;
+	}
+	.headerMenu.responsiveCheck .menuWrapper {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background-color: #fff;
+		z-index: 1;
+		border-bottom: 1px solid #ccc;
+	}
+	.headerMenu.responsiveCheck .menuContent > li {
+		display: block;
+		border-top: 1px solid #CCC;
+	}
+	.headerMenu.responsiveCheck .menuContent > li > a:after {
+		display: none;
+	}
+	.headerMenu.responsiveCheck .menuContent > li > a {
+		display: block;
+		padding: 15px 20px;
+		text-align: left;
+	}
+	.headerMenu.responsiveCheck li.menu-parent > .sub-menu {
+		display: block;
+		position: static;
+		background-color: #F9F9F9;
+		border: none;
+		margin-top: 0;
+	}
+	.headerMenu.responsiveCheck .menuContent > li.menu-parent > .sub-menu {
+		border-top: 2px solid #e32831;
+		padding: 5px 0;
+	}
+	.headerMenu.responsiveCheck .sub-menu li {
+		margin: 0 15px;
+	}
+	.headerMenu.responsiveCheck .sub-menu a, .headerMenu.responsiveCheck .sub-menu > li:last-child > a, .headerMenu.responsiveCheck .sub-menu > li:first-child > a {
+		padding: 5px 15px;
+		border: none;
+	}
+	.headerMenu.responsiveCheck .sub-arrow {
+		position: static;
+		margin-top: 0;
+	}
+	.headerMenu.responsiveCheck .sub-arrow:before {
+		content: '/e873';
+	}
+	.headerMenu.responsiveCheck .headerMenuSearch .searchform {
+		display: block;
+		position: relative;
+		animation: none;
+		width: 100%;
+		border-width: 10px 20px;
+		-webkit-animation: none;
+		-moz-animation: none;
+		-o-animation: none;
+	}
+	.headerMenu.responsiveCheck .headerMenuSearch .searchform input {
+		float: none;
+		width: 100%;
+		padding-right: 36px;
+	}
+	.headerMenu.responsiveCheck .headerMenuSearch .searchform button {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.lightContent .headerMenu.responsiveCheck .menuContent > li > a {
+		color: #5a5a5a;
+		opacity: 1;
+	}
+	.lightContent .headerMenu.responsiveCheck .menuContent > li:hover > a, .lightContent .headerMenu.responsiveCheck .menuContent > li.active > a {
+		color: #E32831;
+	}
+	/** Menu End **/
+	/** Uber Menu **/
+	.headerMenu .ubermenu-responsive-toggle, .headerMenu .ubermenu-sticky-toggle-wrapper {
+		display: none !important;
+	}
+	.headerMenu.responsiveCheck .ubermenu-responsive-default.ubermenu-responsive.ubermenu-responsive-collapse {
+		max-height: none !important;
+		visibility: visible !important;
+		background-color: white;
+	}
+	.headerMenu.responsiveCheck .ubermenu-items-align-left.ubermenu-horizontal .ubermenu-item.ubermenu-item-level-0, .headerMenu.responsiveCheck .ubermenu.ubermenu-horizontal .ubermenu-item.ubermenu-align-left {
+		width: auto;
+		display: block;
+		border-top: 1px solid #CCC;
+	}
+	.headerMenu.responsiveCheck .ubermenu-nav > .ubermenu-item > a {
+		padding: 15px 20px;
+	}
+	.headerMenu.responsiveCheck .ubermenu .ubermenu-item .ubermenu-submenu-drop {
+		position: static;
+		margin: 0;
+		height: auto;
+		max-height: none;
+		visibility: visible;
+		opacity: 1;
+		border-right: none;
+		border-left: none;
+		border-bottom: none;
+		padding: 5px 0;
+		background-color: #F9F9F9;
+	}
+	.headerMenu.responsiveCheck .ubermenu .ubermenu-submenu .ubermenu-column {
+		margin: 0 15px;
+		padding: 0;
+	}
+	.headerMenu.responsiveCheck .ubermenu .ubermenu-submenu a {
+		padding: 5px 10px;
+	}
+	.headerMenu.responsiveCheck .headerMenuSearch {
+		display: block;
+		border-top: 1px solid #CCC;
+	}
+	/** Uber Menu End **/
+	/** Toggled Menu **/
+	.toggledMenu.adminTop .menuWrapper {
+		top: 0;
+	}
+	body.animateBody {
+		position: static;
+	}
+	.toggledMenu .menuWrapper {
+		width: 210px;
+		right: -210px;
+	}
+	/** Toggled Menu End **/
+	/** Social Icons **/
+	.headerSocial li {
+		margin-left: 10px;
+	}
+	/** Social Icons End **/
+	/**** Default Header End ****/
+}
+@media (max-width: 767px) {
+	/** Classes **/
+	header {
+		position: relative;
+	}
+	.headerWrapper .container .headerRow {
+		position: relative;
+	}
+	/** Classes End **/
+	/** Sticky Header **/
+	header.preSticky.activeSticky.adminTop {
+		top: 46px;
+	}
+	header.activeSticky .rowWrapper.stickyHeader {
+		display: none;
+	}
+	header.activeSticky .rowWrapper.stickyHeader.responsiveCheck {
+		display: block;
+	}
+	/** Sticky Header End **/
+	/** Side Header **/
+	.sideToggle {
+		display: none;
+	}
+	/** Side Header End **/
+	/** Main Header **/
+
+	/** Main Header End **/
+	/** Logo **/
+	.logoWrapper img {
+		position: static;
+	}
+	/** Logo End **/
+	/** Menu **/
+	.headerMenu.responsiveCheck:after {
+		content: '';
+		height: 100%;
+		width: 0;
+		display: inline-block;
+		vertical-align: middle
+	}
+	.headerMenu.responsiveCheck .toggleMenuBtn {
+		display: inline-block;
+	}
+	.headerMenu.responsiveCheck .menuWrapper {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background-color: #fff;
+		z-index: 1;
+		border-bottom: 1px solid #ccc;
+	}
+	.headerMenu.responsiveCheck .menuContent > li {
+		display: block;
+		border-top: 1px solid #CCC;
+	}
+	[class*='logoSiblings'] .headerMenu.responsiveCheck .menuContent > li > a, [class*='logoSiblings'] .headerMenu.responsiveCheck .menuContent {
+		height: auto;
+	}
+	.headerMenu.responsiveCheck .menuContent > li > a:after {
+		display: none;
+	}
+	.headerMenu.responsiveCheck .menuContent > li > a {
+		display: block;
+		padding: 15px 10px;
+		text-align: left;
+	}
+	.headerMenu.responsiveCheck li.menu-parent > .sub-menu {
+		display: block;
+		position: static;
+		background-color: #F9F9F9;
+		border: none;
+		margin-top: 0;
+	}
+	.headerMenu.responsiveCheck .menuContent > li.menu-parent > .sub-menu {
+		border-top: 2px solid #e32831;
+		padding: 5px 0;
+	}
+	.headerMenu.responsiveCheck .sub-menu li {
+		margin: 0 10px;
+	}
+	.headerMenu.responsiveCheck .sub-menu a, .headerMenu.responsiveCheck .sub-menu > li:last-child > a, .headerMenu.responsiveCheck .sub-menu > li:first-child > a {
+		padding: 5px 10px;
+		border: none;
+	}
+	.headerMenu.responsiveCheck .headerMenuSearch > span {
+		display: none;
+	}
+	.headerMenu.responsiveCheck .sub-arrow {
+		position: static;
+		margin-top: 0;
+	}
+	.headerMenu.responsiveCheck .sub-arrow:before {
+		content: '/e873';
+	}
+	.headerMenu.responsiveCheck .headerMenuSearch .searchform {
+		display: block;
+		position: relative;
+		animation: none;
+		width: 100%;
+		border-width: 10px 10px;
+		-webkit-animation: none;
+		-moz-animation: none;
+		-o-animation: none;
+	}
+	.headerMenu.responsiveCheck .headerMenuSearch .searchform input {
+		float: none;
+		width: 100%;
+		padding-right: 36px;
+	}
+	.headerMenu.responsiveCheck .headerMenuSearch .searchform button {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.lightContent .headerMenu.responsiveCheck .menuContent > li > a {
+		color: #5a5a5a;
+		opacity: 1;
+	}
+	.lightContent .headerMenu.responsiveCheck .menuContent > li:hover > a, .lightContent .headerMenu.responsiveCheck .menuContent > li.active > a {
+		color: #E32831;
+	}
+	/** Menu End **/
+	/** Uber Menu **/
+	.headerMenu .ubermenu-responsive-toggle, .headerMenu .ubermenu-sticky-toggle-wrapper {
+		display: none !important;
+	}
+	.headerMenu.responsiveCheck .ubermenu-responsive-default.ubermenu-responsive.ubermenu-responsive-collapse {
+		max-height: none !important;
+		visibility: visible !important;
+		background-color: white;
+	}
+	.headerMenu.responsiveCheck .ubermenu-items-align-left.ubermenu-horizontal .ubermenu-item.ubermenu-item-level-0, .headerMenu.responsiveCheck .ubermenu.ubermenu-horizontal .ubermenu-item.ubermenu-align-left {
+		width: auto;
+		display: block;
+		border-top: 1px solid #CCC;
+	}
+	.headerMenu.responsiveCheck .ubermenu-nav > .ubermenu-item > a {
+		padding: 15px 10px;
+	}
+	.headerMenu.responsiveCheck .ubermenu .ubermenu-item .ubermenu-submenu-drop {
+		position: static;
+		margin: 0;
+		height: auto;
+		max-height: none;
+		visibility: visible;
+		opacity: 1;
+		border-right: none;
+		border-left: none;
+		border-bottom: none;
+		padding: 5px 0;
+		background-color: #F9F9F9;
+	}
+	.headerMenu.responsiveCheck .ubermenu .ubermenu-submenu .ubermenu-column {
+		margin: 0 10px;
+		padding: 0;
+	}
+	.headerMenu.responsiveCheck .ubermenu .ubermenu-submenu a {
+		padding: 5px 10px;
+	}
+	.headerMenu.responsiveCheck .headerMenuSearch {
+		display: block;
+		border-top: 1px solid #CCC;
+	}
+	/** Uber Menu End **/
+	/** Toggled Menu **/
+	.toggledMenu.adminTop .menuWrapper {
+		top: 0;
+	}
+	body.animateBody {
+		position: static;
+	}
+	/** Toggled Menu End **/
+	/** Social Icons **/
+	.headerSocial li {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	.headerSocial li:first-child {
+		margin-left: 5px;
+	}
+	/** Social Icons End **/
+}
+@media (max-width: 400px) {
+	/** Classes **/
+	header.preSticky.activeSticky.adminTop {
+		top: 0;
+	}
+	.headerLeft {
+		clear: both;
+		float: none;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.headerRight {
+		clear: both;
+		float: none;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.headerWrapper .container .headerRow {
+		margin-left: 0;
+		margin-right: 0;
+		position: static;
+	}
+	[class*="logoSiblings"] .headerMenu, [class*="logoSiblings"] .headerMenu .menuContent > li > a, [class*="logoSiblings"] .headerMenuSearch > span, [class*="logoSiblings"] .headerMenu .menuContent, [class*="logoSiblings"] .headerMenu #megaMenu ul.megaMenu li.menu-item.ss-nav-menu-mega > a, [class*="logoSiblings"] .headerMenu #megaMenu ul.megaMenu li.menu-item.ss-nav-menu-mega > span.um-anchoremulator, [class*="logoSiblings"] .headerMenu #megaMenu .headerMenuSearch > span, [class*="logoSiblings"] .headerMenu .ubermenu-nav > .ubermenu-item > a, [class*="logoSiblings"] .headerSocial, [class*="logoSiblings"] .toggledMenu,[class*="logoSiblings"] .headerSpacer,[class*="logoSiblings"] .headerText, [class*="logoSiblings"] .headerButton a {
+		height: auto !important;
+	}
+	/** Classes End **/
+	/** Logo **/
+	.logoWrapper, .topHeader .logoWrapper {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		height: auto !important;
+		width: auto !important
+	}
+	.topHeader .logoWrapper img {
+		max-height: none;
+	}
+	.logoWrapper img {
+		height: auto !important;
+	}
+	/** Logo End **/
+	/** Toggled Menu **/
+	.toggledMenu .menuWrapper {
+		width: 210px;
+		right: -210px;
+	}
+	/** Toggled Menu End **/
+	/** Menu **/
+	.headerMenu.responsiveCheck {
+		position: relative;
+	}
+	.headerMenu {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.headerMenu .menuContent > li > a {
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.headerMenu.responsiveCheck .toggleMenuBtn {
+		display: block;
+		margin: 0 auto;
+	}
+	.headerMenu.responsiveCheck:after {
+		display: none;
+	}
+	.headerMenu.responsiveCheck .menuWrapper {
+		left: -10px;
+		right: -10px;
+		margin-top: 10px;
+	}
+	/** Menu End **/
+	/** Toggled Menu **/
+	.toggledMenu {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.toggleMenu.responsiveCheck .toggleMenuBtn, .topHeader .toggleMenu.responsiveCheck .toggleMenuBtn {
+		display: block;
+		margin: 0 auto;
+	}
+	.toggledMenu:after {
+		display: none;
+	}
+	/** Toggled Menu End **/
+	/** Header Social **/
+	.headerSocial {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	.headerSocial li, .mainHeader .headerSocial li {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	/** Header Social End **/
+	/** Header Text **/
+	.headerText {
+		text-align: center;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	[class*="logoSiblings"].rowWrapper .headerText p {
+		display: block;
+		height: auto;
+	}
+	[class*="logoSiblings"].rowWrapper .headerButton {
+		height: auto;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	/** Header Text End **/
+	/** Header Image **/
+	.headerImage {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.headerImage img {
+		height: auto !important;
+	}
+	/** Header Image End **/
+}
+/** Responsive End **/

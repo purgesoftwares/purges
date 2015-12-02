@@ -1,0 +1,36 @@
+.topPost img {
+	width: 100%;
+	height: auto;
+}
+#topPostPrev {
+	background: url('../../img/common/prevArrow.png') no-repeat;
+	width: 7px;
+	height: 10px;
+	position: absolute;
+	right: 20px;
+	top: 42px;
+	cursor: pointer;
+}
+#topPostNext { 	
+	background: url('../../img/common/nextArrow.png') no-repeat;
+	width: 7px;
+	height: 10px;
+	position: absolute;
+	right: 0;
+	top: 42px;
+	cursor: pointer;
+}
+.topPost.carousel-inner{
+	float: left;
+}
+.topPost.carousel-inner a{
+	display: block;
+}
+.topPostwidth {
+	width: 100%;
+}
+.topPost.widget {
+	overflow: hidden;
+	position: relative;
+	
+}

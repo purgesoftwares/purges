@@ -1,0 +1,215 @@
+/** responsive-rtl1.css **/
+@media (max-width: 979px) and (min-width: 768px) {
+    .mainHeader .navbar .nav > li > a:after {
+		right: 20px;
+		left: auto;
+	}
+	.mainHeader .navbar .nav > li > a {
+		padding-right: 40px;
+		padding-left: 0;
+	}
+	.navCollapse ul ul {
+		padding-right: 40px !important;
+		padding-left: 0 !important;
+	}
+	.navCollapse ul ul li {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	#overlaySlider .headerStyle7.mainHeader #logoWrapper {
+		float: right;
+		margin-right: 20px;
+		margin-left: 0;
+	}
+	.headerStyle7.mainHeader .menuButtonResponsive a {
+		float: left;
+		margin-left: 20px;
+		margin-right: 0;
+	}
+	.mainHeader .nav.right {
+		margin: 0;
+	}
+	.headerStyle2 .navbar .nav.right {
+		width: 100%;
+	}
+	.headerStyle1 .btn-navbar {
+		margin-bottom: 0;
+	}
+	.headerStyle5.headerAfter .navCollapse ul.nav {
+		width: 100%;
+	}
+	.headerStyle1 #logoWrapper {
+		float: right;
+		margin-right: 30px;
+		margin-left: 0;
+	}
+	.headerStyle3 .navigationButton {
+		float: left;
+	}
+	.headerStyle1 .btn-navbar, .headerStyle4 .btn-navbar {
+		float: left;
+	}
+	.headerStyle4.mainHeader .btn-navbar {
+		margin: 10px 0 0 20px;
+		float: left;
+	}
+	.headerStyle4 #logoWrapper {
+		float: right;
+		margin-right: 20px;
+		margin-left: 0;
+	}
+	.mainHeader .nav-collapse .nav > li .dropdown-menu {
+		margin: 5px 10px 0 0 !important;
+	}
+	.headerStyle1.mainHeader .btn-navbar {
+		float: left;
+		margin-left: 30px;
+		margin-right: 0;
+	}
+	.headerStyle1.mainHeader .navbar {
+		float: right;
+	}
+	.headerStyle3 #logoWrapper {
+		float: right;
+	}
+	.top_header_style4 .navbar .nav > li > a {
+		padding-right: 40px !important;
+		padding-left: 0 !important;
+	}
+	.smallHeader .navbar .nav > li > a:after {
+		right: 20px;
+		left: auto;
+	}
+}
+/** responsive-rtl2.css **/
+@media (max-width: 767px) {
+    .headerStyle1 #logoWrapper {
+		float: right;
+		margin-right: 10px;
+		margin-left: 0;
+	}
+	#overlaySlider .headerStyle7.mainHeader #logoWrapper {
+		float: right;
+		margin-right: 20px;
+		margin-left: 0;
+	}
+	.headerStyle2.mainHeader {
+		margin-top: 0;
+	}
+	.headerStyle4 .navCollapse {
+		top: 10px;
+	}
+	.top_header_style4.smallHeader .header_top_right {
+		float: none;
+	}
+	.headerStyle7.mainHeader .menuButtonResponsive a {
+		float: left;
+		margin-left: 20px;
+		margin-right: 0;
+	}
+	.top_header_style4 .navbar .nav > li > a {
+		padding-right: 40px !important;
+		padding-left: 0 !important;
+	}
+	.smallHeader .navbar .nav > li > a:after {
+		right: 20px;
+		left: auto;
+	}
+	.top_header_style4 .nav li {
+		margin-right: 0;
+	}
+	.headerStyle1.mainHeader .btn-navbar {
+		float: left;
+		margin-left: 10px;
+		margin-right: 0;
+	}
+	.headerStyle1.mainHeader .navbar {
+		float: right;
+	}
+	.menuOverlay {
+		left: 0;
+		left: auto;
+	}
+	.mainHeader .nav-collapse .nav > li .dropdown-menu {
+		margin: 5px 10px 0 0 !important;
+	}
+	.mainHeader .nav-collapse .dropdown-menu li > a {
+		padding: 5px 20px 5px 0;
+	}
+	.headerStyle1.mainHeader .btn-navbar {
+		float: left;
+	}
+	.headerStyle4 #logoWrapper {
+		float: right;
+		margin-right: 20px;
+		margin-left: 0;
+	}
+	.top_header_style3 .nav .dropdown-menu {
+		padding-right: 20px;
+		padding-left: 0;
+	}
+	.headerStyle3 #logoWrapper {
+		float: right;
+	}
+	.mainHeader .navbar .nav > li > a:after {
+		right: 20px;
+		left: auto;
+	}
+	.mainHeader .navbar .nav > li > a {
+		padding-right: 40px;
+		padding-left: 0;
+	}
+    .headerStyle1 .btn-navbar {
+		margin-bottom: 20px;
+	}
+	.headerStyle1.mainHeader .nav.right {
+		margin: 0;
+	}
+	.headerStyle5.headerAfter .navCollapse ul.nav {
+		width: 100%;
+	}
+	.mainHeader .nav.right {
+		margin: 0;
+	}
+	.headerStyle2 .navbar .nav.right {
+		width: 100%;
+	}
+}
+@media (max-width: 400px) {
+    .headerStyle4 #logoWrapper img {
+		right: auto;
+	}
+	body .headerStyle4 #logoWrapper {
+		float: none;
+		margin: 0 auto;
+		display: block;
+	}
+	.menuButtonResponsive .btn-navbar {
+		margin-left: 0;
+	}
+	.top_header_style4 .nav .dropdown-menu {
+		padding-right: 20px;
+		padding-left: 0;
+	}
+	.top_header_style4 .nav > li > a:hover,
+    .top_header_style4 .navbar .nav > li.open > a {
+		padding-right: 40px !important;
+		padding-left: 0 !important;
+	}
+	.top_header_style4 .navbar .nav > li > a {
+		padding-right: 40px !important;
+		padding-left: 0 !important;
+	}
+	#overlaySlider .headerStyle7.mainHeader #logoWrapper {
+		float: none;
+		margin: 0 auto;
+	}
+      .headerStyle1 #logoWrapper {
+		float: none;
+		margin: 0 auto;
+		display: block;
+	}
+	.headerStyle5.headerAfter .navCollapse ul.nav {
+		width: 100%;
+	}  
+}

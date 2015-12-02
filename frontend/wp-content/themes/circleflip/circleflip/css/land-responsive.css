@@ -1,0 +1,37 @@
+@media (max-width: 1000px) and (min-width: 768px) {
+	.landContainer{
+		width: 740px;
+	}
+}
+@media (max-width: 767px) {
+	#landingBody {
+		margin: 0 40px 0 0;
+	}
+	.landContainer{
+		width: auto;
+		left: 20px;
+	}
+	.LandContent {
+		margin: 0 auto 40px;
+		display: block;
+		width: 343px;
+	}
+	.LandContent > div {
+		margin-left: 0;
+		margin-bottom: 40px;
+	}
+}
+@media (max-width: 400px) {
+	#landingBody {
+		margin: 0;
+	}
+	.LandContent{
+		width: 100%;
+	}
+	.LandContent img{
+		width: 100%;
+	}
+	.landContainer{
+		left: 0;
+	}
+}

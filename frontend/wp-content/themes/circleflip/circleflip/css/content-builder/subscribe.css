@@ -1,0 +1,132 @@
+.subscribe .iconComment{
+	color: white;
+	font-size: 22px;
+	line-height: 44px;
+}
+.subscribe .icon-chat{
+	color: white;
+	font-size: 22px;
+	line-height: 44px;
+}
+.iconAnnouncement{
+	text-align: center;
+	/* background: #e32831 */
+	width: 43px;
+	height: 43px;
+	border-radius: 50%;
+}
+.iconAnnouncement:before{
+	position: absolute;
+	content: '';
+	display: block;
+	border-radius: 30px;
+	border: 2px solid transparent;
+}
+.subscribe .icon{
+	float: left;
+	margin-right: 30px;
+}
+.subscribe p{
+	width: 607px;
+	float: left;
+}
+.aq-block-cr_announcment_block.span11 .subscribe p{
+	width: 577px;
+}
+.aq-block-cr_announcment_block.span10 .subscribe p{
+	width: 500px;
+}
+.aq-block-cr_announcment_block.span9 .subscribe p{
+	width: 420px;
+}
+.aq-block-cr_announcment_block.span8 .subscribe p{
+	width: 340px;
+}
+.aq-block-cr_announcment_block.span7 .subscribe p{
+	width: 260px;
+}
+.aq-block-cr_announcment_block.span6 .subscribe .icon, .aq-block-cr_announcment_block.span5 .subscribe .icon, .aq-block-cr_announcment_block.span4 .subscribe .icon, .aq-block-cr_announcment_block.span3 .subscribe .icon, .aq-block-cr_announcment_block.span2 .subscribe .icon {
+	float: none;
+	margin: 0 auto 20px;
+	display: table;
+}
+.aq-block-cr_announcment_block.span6 .subscribe p, .aq-block-cr_announcment_block.span5 .subscribe p, .aq-block-cr_announcment_block.span4 .subscribe p, .aq-block-cr_announcment_block.span3 .subscribe p, .aq-block-cr_announcment_block.span2 .subscribe p {
+	width: 100% !important;
+	margin-bottom: 20px;
+}
+.aq-block-cr_announcment_block.span6 .subscribe a, .aq-block-cr_announcment_block.span5 .subscribe a, .aq-block-cr_announcment_block.span4 .subscribe a, .aq-block-cr_announcment_block.span3 .subscribe a, .aq-block-cr_announcment_block.span2 .subscribe a {
+	position: relative;
+	float: none;
+	right: 0;
+	margin: 0 auto;
+	top: 0 !important;
+}
+.subscribe a{
+	position: absolute;
+	right: 20px;
+	top: 40%;
+}
+.aq-block-cr_announcment_block.span5 .subscribe p, .aq-block-cr_announcment_block.span4 .subscribe p, .aq-block-cr_announcment_block.span3 .subscribe p, .aq-block-cr_announcment_block.span2 .subscribe p {
+	width: 100%;
+	margin-bottom: 20px;
+}
+.aq-block-cr_announcment_block.span5 .subscribe a, .aq-block-cr_announcment_block.span4 .subscribe a, .aq-block-cr_announcment_block.span3 .subscribe a, .aq-block-cr_announcment_block.span2 .subscribe a {
+	margin: 0 auto;
+	float :none;
+	position: relative;
+}
+.aq-block-cr_announcment_block.span5 .subscribe .icon, .aq-block-cr_announcment_block.span4 .subscribe .icon, .aq-block-cr_announcment_block.span3 .subscribe .icon, .aq-block-cr_announcment_block.span2 .subscribe .icon {
+	float: none;
+	margin: 0 auto 20px;
+	display: table;
+}
+.subscribe{
+	padding: 20px 25px 20px 20px;
+	background: #f7f7f7;
+	border: 1px solid #e9e9e9;
+	margin-bottom: 20px;
+	overflow: hidden;
+	position: relative;
+}
+.subscribe.Dark{
+	background: #1e1e1e;
+}
+
+.subscribe p{
+	font-family: 'sourceSansLight';
+	margin-right: 50px;
+	font-style: italic;
+	color: #050505;
+	font-size: 13px;
+}
+.subscribe.Dark p{
+	font-family: 'sourceSans';
+	font-style: italic;
+	color: #ffffff;
+}
+.subscribe button{
+	float:right;
+}
+.cornerTop{
+	width: 29px;
+	height: 29px;
+	background: #ababab;
+	border-radius: 20px;
+	position: absolute;
+	margin: -14px -14px 0 0;
+	top: 0;
+	right: 0;
+}
+.cornerBottom{
+	width: 29px;
+	height: 29px;
+	background: #ababab;
+	border-radius: 20px;
+	position: absolute;
+	margin: 0 0 -14px -14px;
+	bottom: 0;
+	left: 0;
+}
+.aq-block-cr_announcment_block a.btnLarge{
+	display: block !important;
+}

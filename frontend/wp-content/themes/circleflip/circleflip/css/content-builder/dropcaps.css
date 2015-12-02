@@ -1,0 +1,25 @@
+.dropcap{
+	float:left;
+	font-size:20px;
+	color:#ffffff;
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	background: #b92424;
+	border-radius: 20px;
+	text-transform: uppercase;
+	margin: 5px 10px 10px 5px;
+}
+.drop{
+	float:left;
+	font-size: 22px;
+	color:#b92424;
+	margin: 10px 20px 10px 15px;
+	text-transform: uppercase;
+}
+.dropcapText, .dropcapLight {
+	font-family: 'sourceSans';
+	font-size: 13px;
+	color: #5a5a5a;
+}

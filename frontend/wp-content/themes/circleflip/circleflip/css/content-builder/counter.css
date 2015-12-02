@@ -1,0 +1,32 @@
+/* Counter Block
+ ========================================================================*/
+@font-face {
+    font-family: 'chunkfive';
+    src: url('../fonts/chunkFive/chunkfive-webfont.eot');
+    src: url('../fonts/chunkFive/chunkfive-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/chunkFive/chunkfive-webfont.woff') format('woff'),
+         url('../fonts/chunkFive/chunkfive-webfont.ttf') format('truetype'),
+         url('../fonts/chunkFive/chunkfive-webfont.svg#chunkFive') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.cfCounter span {
+	display: block;
+	font-family: 'chunkfive'
+}
+.cfCounter .counterNumber {
+	font-size: 50px;
+	line-height: 1em;
+	margin-bottom: 10px;
+}
+.cfCounter .counterUnit {
+	line-height: 1em;
+	font-size: 30px;
+}
+.cfCounter .counterIcon {
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+.cfCounter .counterNumber, .cfCounter .counterIcon {
+	color: #E32831;
+}

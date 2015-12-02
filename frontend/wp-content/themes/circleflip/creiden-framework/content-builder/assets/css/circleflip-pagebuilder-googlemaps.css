@@ -1,0 +1,231 @@
+.block-cr_gmap_block .block-settings .modal-body {
+    overflow: hidden;
+    padding: 0;
+}
+.circleflip-googlemaps-frame .cfgm-rightpanel {
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+    float: right;
+    position: relative;
+}
+.circleflip-googlemaps-frame .cfgm-leftpanel {
+    height: 100%;
+    display: block;
+    overflow: hidden;
+}
+.circleflip-googlemaps-frame .cfgm-map,
+.circleflip-googlemaps-frame .cfgm-map-container,
+.circleflip-googlemaps-frame {
+    height: 100%;
+}
+.circleflip-googlemaps-frame .cfgm-error .error {
+    margin: 15px 10px !important;
+    background: #fcfcfc;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+/* -------------------------------------------------------------------------- */
+/* # TABLE STRUCTURE */
+.circleflip-googlemaps-frame .cfgm-locationlist {
+    table-layout: fixed;
+}
+.circleflip-googlemaps-frame .cfgm-location-key {
+    width: 40px;
+    box-sizing: border-box;
+}
+.circleflip-googlemaps-frame .cfgm-location-title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: default;
+}
+.circleflip-googlemaps-frame .cfgm-location-actions {
+    width: 87px;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+.circleflip-googlemaps-frame .cfgm-location:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+/* #END TABLE STRUCTURE */
+/* # USER CONTROLS */
+.circleflip-googlemaps-frame .cfgm-location-hidden .cfgm-location-action-hide,
+.circleflip-googlemaps-frame .cfgm-location-action-primary{
+    opacity: 0.2;
+}
+.circleflip-googlemaps-frame .cfgm-location-primary .cfgm-location-action-primary {
+    opacity: 1;
+}
+.circleflip-googlemaps-frame .cfgm-location-action-primary,
+.circleflip-googlemaps-frame .cfgm-location-actions .dashicons {
+    cursor: pointer;
+}
+.circleflip-googlemaps-frame .cfgm-location-primary .cfgm-location-action-primary {
+    cursor: auto;
+}
+.circleflip-googlemaps-frame .cfgm-location.cfgm-location-selected {
+    background: rgba(177, 232, 232, 0.6);
+}
+.cfgm-location {
+    transition: transform .6s linear;
+}
+/* #END USER CONTROLS */
+/* -------------------------------------------------------------------------- */
+.circleflip-googlemaps-frame .cfgm-map-toolbar-search {
+    overflow: hidden;
+}
+.circleflip-googlemaps-frame .cfgm-map-toolbar-pin {
+    width: 52px;
+    height: 52px;
+    float: right;
+}
+.circleflip-googlemaps-frame .cfgm-map-toolbar-search .cfgm-map-search {
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    border-left: 5px solid #c5c5c5;
+    box-shadow: none;
+    margin: 0;
+    padding: 15px;
+    transition: 150ms ease-out;
+}
+.circleflip-googlemaps-frame .cfgm-map-toolbar-search .cfgm-map-search:focus {
+    border-left: 10px solid #0074a2;
+}
+.circleflip-googlemaps-frame .cfgm-map-toolbar-pin .cfgm-map-pin {
+    height: 52px;
+
+    width: 52px;
+    font-size: 32px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+/* ------------------------------------------------------------------------- */
+/* Google Places API autocomplete container */
+.pac-container {
+    z-index: 99999;
+    margin-left: 10px;
+    box-shadow: none;
+    border-top: none;
+}
+.pac-item:first-child {
+    border-top: none;
+}
+/* ------------------------------------------------------------------------- */
+.cfgm-content-panel {
+    height: 100%;
+    overflow: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+/* -------------------------------------------------------------------------- */
+.cfgm-edit {
+    opacity: 0;
+    padding: 0;
+    overflow: hidden;
+    transform: translateY(-100%);
+    transition: opacity .15s linear;
+}
+.cfgm-edit.cfgm-edit-open {
+    opacity: 1;
+}
+.cfgm-edit-header {
+    height: 50px;
+    background: #fcfcfc;
+    border-bottom: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    box-shadow: 0px -7px 17px 0px;
+
+    /* for box shadow to appear */
+    position: relative;
+}
+
+.cfgm-edit-header > [class*="cfgm-location-"] {
+    padding: 15px 10px;
+}
+
+.cfgm-edit-header .cfgm-location-key {
+    float: left;
+}
+
+.cfgm-edit-header .cfgm-location-actions {
+    float: right;
+    width: 63px;
+}
+.cfgm-edit-header .cfgm-location-title {
+    overflow: hidden;
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 20px;
+}
+.cfgm-edit-header .cfgm-edit-pretitle {
+    font-weight: normal;
+    font-style: italic;
+}
+.cfgm-edit-body {
+    height: calc(100% - 100px);
+    background: white;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+.cfgm-edit-field-title {
+    float: left;
+    width: 20%;
+    min-width: 100px;
+    text-align: right;
+    padding: 15px 15px;
+    box-sizing: border-box;
+}
+.cfgm-edit-field {
+  overflow: hidden;
+  padding: 10px 15px;
+  box-sizing: border-box;
+}
+.cfgm-edit-field textarea {
+    resize: vertical;
+}
+.cfgm-edit-footer {
+    height: 50px;
+    padding: 10px 20px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+    background: #fcfcfc;
+    box-sizing: border-box;
+}
+.cfgm-media-box img {
+    max-width: 100%;
+}
+.cfgm-media-box-controls {
+    width: 100%;
+}
+.cfgm-media-box-controls [data-action] {
+    width: calc(50% - 12px);
+    margin: 5px;
+    font-size: 20px;
+    height: 1.5em;
+}
+.cfgm-media-box {
+    width: 100%;
+    box-sizing: border-box;
+}
+.cfgm-edit-field-row {
+    width: 100%;
+    clear: both;
+}
+.cfgm-settings {
+    margin-top: 30px;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 30px;
+}
+.cfgm-locationlist-body + tfoot {
+    display: none;
+}
+.cfgm-locationlist-body + tfoot th {
+    text-align: center;
+}
+.cfgm-locationlist-body:empty + tfoot {
+    display: table-footer-group;
+}

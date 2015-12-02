@@ -1,0 +1,67 @@
+@media (max-width: 979px) and (min-width: 768px) {
+	body .featuresHome li {
+		margin-right: 20px;
+	}
+	[class*="span"] {
+		margin-right: 20px;
+	}
+	.span8 .socialShare h3{
+		border-right: none;
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	.span8 .socialShare li {
+		padding: 0px 0 4px 4px;
+	}
+	.postBlog1 .postDetails {
+		margin-right: 65px;
+		margin-left: 0;
+	}
+	.postBlog1.blogStyle2 .postDetails {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	body .postBlog2 .postDetails {
+		margin-right: 65px;
+		margin-left: 0;
+	}
+	.postBlog1.blogStyle2 .postDetails {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.depth-2 > .comment.row > .comment-line {
+		margin-right: -30px;
+		margin-left: 0;
+	}
+	ul.children .comment-line {
+		margin-right: -60px;
+		margin-left: 0;
+	}
+	.commentlist li.depth-1 > .comment.row .comment-line {
+		margin-right: -35px;
+		margin-left: 0;
+	}
+	.postBlog4 .postDate .day {
+		padding: 0 0 0 3px;
+	}
+	.postBlog4 .postDate .monthYear {
+		padding: 0 3px 0 0;
+	}
+	.postBlog4 .postDetails {
+		margin-right: 105px;
+		margin-left: 0;
+	}
+	.aq-block-cr_announcment_block.span8 .subscribe a {
+		left: 0;
+		right: auto;
+	}
+	.row .woocommerceAlert {
+		margin-right: 20px !important;
+		margin-left: 0 !important;
+	}
+	.row {
+		margin-right: -20px;
+	}
+}
+
+

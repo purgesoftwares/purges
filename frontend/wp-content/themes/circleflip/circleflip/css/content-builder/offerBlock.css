@@ -1,0 +1,71 @@
+/* Offer Block
+ ========================================================================*/
+.offerCircle{
+	background: #ececec;
+	border-radius: 200px;
+	height: 180px;
+	width: 180px;
+	display: table;
+	margin: 0 auto 20px auto;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	transition: 0.5s ease;
+	-moz-box-shadow: inset 1px 0px 3px #BBBBBB;
+	-webkit-box-shadow: inset 1px 0px 3px #BBBBBB;
+	box-shadow: inset 1px 0px 3px #BBBBBB;
+}
+.offerCircleInner{
+	display: table-cell;
+	vertical-align: middle;
+}
+.offerCircle:hover {
+	-moz-box-shadow: inset 1px 0px 3px #312E2E;
+	-webkit-box-shadow: inset 1px 0px 3px #312E2E;
+	box-shadow: inset 1px 0px 3px #312E2E;
+}
+.offerCircle:hover .offerImage, .offerCircle:hover .offerTitle{
+	color: #ffffff;
+}
+.offerImage{
+	color: #2a2a2a;
+	display: block !important;
+	margin: 0 auto 60px auto !important;
+	text-align: center;
+	font-size: 60px !important;
+	width: auto !important;
+	height: 13px !important;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+.offerImage:before {
+	width: auto;
+}
+.offerTitle{
+	font-family: 'sourceSans';
+	font-size: 18px;
+	color: #2a2a2a;
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	display: block;
+	text-align: center;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	transition: 0.5s ease;	
+}
+.offerText{
+	font-family: 'sourceSans';
+	font-size: 13px;
+	color: #5a5a5a;
+	margin-left:0;
+	display: block;
+	text-align: center;
+}
+.offerBlock li a{
+	display: table;
+	margin: 0 auto;
+}

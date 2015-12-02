@@ -1,0 +1,13 @@
+.widgetcategory_with_count {
+	overflow: hidden;
+	border-bottom: 2px dotted #dbdbdb;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	display: block;
+}
+.footerList .categoryCount .widgetcategory_with_count {
+	margin-left: 0;
+}
+.footerList .sidebarSeparator{
+	border: none;
+}

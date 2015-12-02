@@ -1,0 +1,505 @@
+@media (max-width: 979px) and (min-width: 768px) {
+    /** Side Header **/
+    .sideToggle {
+        display: none;
+    }
+    /** Side Header End **/
+    /** Menu **/
+    .headerMenu.responsiveCheck:after {
+        content: '';
+        height: 100%;
+        width: 0;
+        display: inline-block;
+        vertical-align: middle
+    }
+    .headerMenu.responsiveCheck .toggleMenuBtn {
+        display: inline-block;
+    }
+    .headerWrapper {
+        position: relative;
+    }
+    .headerMenu.responsiveCheck {
+        position: static;
+    }
+    .headerMenu.responsiveCheck .menuWrapper {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        z-index: 1;
+        border-bottom: 1px solid #ccc;
+    }
+    .headerMenu.responsiveCheck .menuContent > li {
+        display: block;
+        border-top: 1px solid #CCC;
+    }
+    .headerMenu.responsiveCheck .menuContent > li > a:after {
+        display: none;
+    }
+    .headerMenu.responsiveCheck .menuContent > li > a {
+        display: block;
+        padding: 15px 20px;
+        text-align: left;
+    }
+    .headerMenu.responsiveCheck li.menu-parent > .sub-menu {
+        display: block;
+        position: static;
+        background-color: #F9F9F9;
+        border: none;
+        margin-top: 0;
+    }
+    .headerMenu.responsiveCheck .menuContent > li.menu-parent > .sub-menu {
+        border-top: 2px solid /*#e32831*/;
+        padding: 5px 0;
+    }
+    .headerMenu.responsiveCheck .sub-menu li {
+        margin: 0 15px;
+    }
+    .headerMenu.responsiveCheck .sub-menu a,
+    .headerMenu.responsiveCheck .sub-menu > li:last-child > a,
+    .headerMenu.responsiveCheck .sub-menu > li:first-child > a {
+        padding: 5px 15px;
+        border: none;
+    }
+    .headerMenu.responsiveCheck .sub-arrow {
+        position: static;
+        margin-top: 0;
+    }
+    .headerMenu.responsiveCheck .sub-arrow:before {
+        content: '\e873';
+    }
+    .headerMenu.responsiveCheck .headerMenuSearch .searchform {
+        display: block;
+        position: relative;
+        animation: none;
+        width: 100%;
+        border-width: 10px 20px;
+        -webkit-animation: none;
+        -moz-animation: none;
+        -o-animation: none;
+    }
+    .headerMenu.responsiveCheck .headerMenuSearch .searchform input {
+        float: none;
+        width: 100%;
+        padding-right: 36px;
+    }
+    .headerMenu.responsiveCheck .headerMenuSearch .searchform button {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .lightContent .headerMenu.responsiveCheck .menuContent > li > a {
+        color: #5a5a5a;
+        opacity: 1;
+    }
+    /*.lightContent .headerMenu.responsiveCheck .menuContent > li:hover > a,
+    .lightContent .headerMenu.responsiveCheck .menuContent > li.active > a {
+        color: #E32831;
+    }*/
+    /** Menu End **/
+    /** Uber Menu **/
+    .headerMenu .ubermenu-responsive-toggle,
+    .headerMenu .ubermenu-sticky-toggle-wrapper {
+        display: none !important;
+    }
+    .headerMenu.responsiveCheck .ubermenu-responsive-default.ubermenu-responsive.ubermenu-responsive-collapse {
+        max-height: none !important;
+        visibility: visible !important;
+        background-color: white;
+    }
+    .headerMenu.responsiveCheck .ubermenu-items-align-left.ubermenu-horizontal .ubermenu-item.ubermenu-item-level-0,
+    .headerMenu.responsiveCheck .ubermenu.ubermenu-horizontal .ubermenu-item.ubermenu-align-left {
+        width: auto;
+        display: block;
+        border-top: 1px solid #CCC;
+    }
+    .headerMenu.responsiveCheck .ubermenu-nav > .ubermenu-item > a {
+        padding: 15px 20px;
+        color: #333;
+    }
+    .headerMenu.responsiveCheck .ubermenu .ubermenu-item .ubermenu-submenu-drop {
+        position: static;
+        margin: 0;
+        height: auto;
+        max-height: none;
+        visibility: visible;
+        opacity: 1;
+        border-right: none;
+        border-left: none;
+        border-bottom: none;
+        padding: 5px 0;
+        background-color: #F9F9F9;
+    }
+    .headerMenu.responsiveCheck .ubermenu .ubermenu-submenu .ubermenu-column {
+        margin: 0 15px;
+        padding: 0;
+    }
+    .headerMenu.responsiveCheck .ubermenu .ubermenu-submenu a {
+        padding: 5px 10px;
+    }
+    .headerMenu.responsiveCheck .headerMenuSearch {
+        display: block;
+        border-top: 1px solid #CCC;
+    }
+    /** Uber Menu End **/
+    /** Toggled Menu **/
+    .toggledMenu.adminTop .menuWrapper {
+        top: 0;
+    }
+    body.animateBody {
+        position: static;
+    }
+    .toggledMenu .menuWrapper {
+        width: 210px;
+        right: -210px;
+    }
+    /** Toggled Menu End **/
+    /** Social Icons **/
+    .headerSocial li {
+        margin-left: 10px;
+    }
+    /** Social Icons End **/
+    /**** Default Header End ****/
+}
+@media (max-width: 767px) {
+    /** Classes **/
+    header {
+        position: relative;
+    }
+    .headerWrapper .container .headerRow {
+        position: relative;
+    }
+    /** Classes End **/
+    /** Sticky Header **/
+    header.preSticky.activeSticky.adminTop {
+        top: 46px;
+    }
+    header.activeSticky .rowWrapper.stickyHeader {
+        display: none;
+    }
+    header.activeSticky .rowWrapper.stickyHeader.responsiveCheck {
+        display: block;
+    }
+    /** Sticky Header End **/
+    /** Side Header **/
+    .sideToggle {
+        display: none;
+    }
+    /** Side Header End **/
+    /** Menu **/
+    .headerMenu.responsiveCheck:after {
+        content: '';
+        height: 100%;
+        width: 0;
+        display: inline-block;
+        vertical-align: middle
+    }
+    .headerMenu.responsiveCheck .toggleMenuBtn {
+        display: inline-block;
+    }
+    .headerMenu.responsiveCheck .menuWrapper {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        z-index: 1;
+        border-bottom: 1px solid #ccc;
+    }
+    .headerMenu.responsiveCheck .menuContent > li {
+        display: block;
+        border-top: 1px solid #CCC;
+    }
+    [class*='logoSiblings'] .headerMenu.responsiveCheck .menuContent > li > a,
+    [class*='logoSiblings'] .headerMenu.responsiveCheck .menuContent,
+    [class*='logoSiblings'] .headerMenu.responsiveCheck .ubermenu-nav > .ubermenu-item > a {
+        height: auto;
+    }
+    .headerMenu.responsiveCheck .menuContent > li > a:after {
+        display: none;
+    }
+    .headerMenu.responsiveCheck .menuContent > li > a {
+        display: block;
+        padding: 15px 10px;
+        text-align: left;
+    }
+    .headerMenu.responsiveCheck li.menu-parent > .sub-menu {
+        display: block;
+        position: static;
+        background-color: #F9F9F9;
+        border: none;
+        margin-top: 0;
+    }
+    .headerMenu.responsiveCheck .menuContent > li.menu-parent > .sub-menu {
+        border-top: 2px solid;
+        padding: 5px 0;
+    }
+    .headerMenu.responsiveCheck .sub-menu li {
+        margin: 0 10px;
+    }
+    .headerMenu.responsiveCheck .sub-menu a,
+    .headerMenu.responsiveCheck .sub-menu > li:last-child > a,
+    .headerMenu.responsiveCheck .sub-menu > li:first-child > a {
+        padding: 5px 10px;
+        border: none;
+    }
+    .headerMenu.responsiveCheck .headerMenuSearch > span {
+        display: none;
+    }
+    .headerMenu.responsiveCheck .sub-arrow {
+        position: static;
+        margin-top: 0;
+    }
+    .headerMenu.responsiveCheck .sub-arrow:before {
+        content: '\e873';
+    }
+    .headerMenu.responsiveCheck .headerMenuSearch .searchform {
+        display: block;
+        position: relative;
+        animation: none;
+        width: 100%;
+        border-width: 10px 10px;
+        -webkit-animation: none;
+        -moz-animation: none;
+        -o-animation: none;
+    }
+    .headerMenu.responsiveCheck .headerMenuSearch .searchform input {
+        float: none;
+        width: 100%;
+        padding-right: 36px;
+    }
+    .headerMenu.responsiveCheck .headerMenuSearch .searchform button {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .lightContent .headerMenu.responsiveCheck .menuContent > li > a {
+        color: #5a5a5a;
+        opacity: 1;
+    }
+    /*.lightContent .headerMenu.responsiveCheck .menuContent > li:hover > a,
+    .lightContent .headerMenu.responsiveCheck .menuContent > li.active > a {
+        color: #E32831;
+    }*/
+    /** Menu End **/
+    /** Uber Menu **/
+    .headerMenu .ubermenu-responsive-toggle,
+    .headerMenu .ubermenu-sticky-toggle-wrapper {
+        display: none !important;
+    }
+    .headerMenu.responsiveCheck .ubermenu-responsive-default.ubermenu-responsive.ubermenu-responsive-collapse {
+        max-height: none !important;
+        visibility: visible !important;
+        background-color: white;
+    }
+    .headerMenu.responsiveCheck .ubermenu-items-align-left.ubermenu-horizontal .ubermenu-item.ubermenu-item-level-0,
+    .headerMenu.responsiveCheck .ubermenu.ubermenu-horizontal .ubermenu-item.ubermenu-align-left {
+        width: auto;
+        display: block;
+        border-top: 1px solid #CCC;
+    }
+    .headerMenu.responsiveCheck .ubermenu-nav > .ubermenu-item > a {
+        padding: 15px 10px;
+        color: #333;
+    }
+    .headerMenu.responsiveCheck .ubermenu .ubermenu-item .ubermenu-submenu-drop {
+        position: static;
+        margin: 0;
+        height: auto;
+        max-height: none;
+        visibility: visible;
+        opacity: 1;
+        border-right: none;
+        border-left: none;
+        border-bottom: none;
+        padding: 5px 0;
+        background-color: #F9F9F9;
+    }
+    .headerMenu.responsiveCheck .ubermenu .ubermenu-submenu .ubermenu-column {
+        margin: 0 10px;
+        padding: 0;
+        clear: both !important;
+    }
+    .headerMenu.responsiveCheck .ubermenu .ubermenu-submenu a {
+        padding: 5px 10px;
+    }
+    .headerMenu.responsiveCheck .headerMenuSearch {
+        display: block;
+        border-top: 1px solid #CCC;
+    }
+    .headerMenu .ubermenu-responsive-default.ubermenu-responsive.ubermenu-responsive-collapse {
+    	max-height: none;
+    	overflow: inherit !important;
+    	visibility: visible;
+    	width: auto;
+    }
+    .headerMenu .ubermenu-responsive-default.ubermenu.ubermenu-responsive .ubermenu-column,
+    .headerMenu .ubermenu-responsive-default.ubermenu.ubermenu-responsive .ubermenu-column-auto {
+    	width: auto;
+    	min-width: 0;
+    }
+    /** Uber Menu End **/
+    /** Toggled Menu **/
+    .toggledMenu.adminTop .menuWrapper {
+        top: 0;
+    }
+    body.animateBody {
+        position: static;
+    }
+    /** Toggled Menu End **/
+    /** Social Icons **/
+    .headerSocial li {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .headerSocial li:first-child {
+        margin-left: 5px;
+    }
+    /** Social Icons End **/
+}
+@media (max-width: 400px) {
+    /** Classes **/
+    header.preSticky.activeSticky.adminTop {
+        top: 0;
+    }
+    .headerLeft {
+        clear: both;
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .headerRight {
+        clear: both;
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .headerWrapper .container .headerRow {
+        margin-left: 0;
+        margin-right: 0;
+        position: static;
+    }
+    [class*="logoSiblings"] .headerMenu,
+    [class*="logoSiblings"] .headerMenu .menuContent > li > a,
+    [class*="logoSiblings"] .headerMenuSearch > span,
+    [class*="logoSiblings"] .headerMenu .menuContent,
+    [class*="logoSiblings"] .headerMenu #megaMenu ul.megaMenu li.menu-item.ss-nav-menu-mega > a,
+    [class*="logoSiblings"] .headerMenu #megaMenu ul.megaMenu li.menu-item.ss-nav-menu-mega > span.um-anchoremulator,
+    [class*="logoSiblings"] .headerMenu #megaMenu .headerMenuSearch > span,
+    [class*="logoSiblings"] .headerMenu .ubermenu-nav > .ubermenu-item > a,
+    [class*="logoSiblings"] .headerMenu .ubermenu-nav > li > a,
+    [class*="logoSiblings"] .headerSocial,
+    [class*="logoSiblings"] .toggledMenu,
+    [class*="logoSiblings"] .headerSpacer,
+    [class*="logoSiblings"] .headerText,
+    [class*="logoSiblings"] .headerButton a {
+        height: auto !important;
+    }
+    /** Classes End **/
+    /** Logo **/
+    .logoWrapper,
+    .topHeader .logoWrapper {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: auto !important;
+        width: auto !important
+    }
+    .topHeader .logoWrapper img {
+        max-height: none;
+    }
+    .logoWrapper img {
+        height: auto !important;
+        position: static;
+    }
+    /** Logo End **/
+    /** Toggled Menu **/
+    .toggledMenu .menuWrapper {
+        width: 210px;
+        right: -210px;
+    }
+    /** Toggled Menu End **/
+    /** Menu **/
+    .headerMenu.responsiveCheck {
+        position: relative;
+    }
+    .headerMenu {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .headerMenu .menuContent > li > a {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .headerMenu.responsiveCheck .toggleMenuBtn {
+        display: block;
+        margin: 0 auto;
+    }
+    .headerMenu.responsiveCheck:after {
+        display: none;
+    }
+    .headerMenu.responsiveCheck .menuWrapper {
+        left: -10px;
+        right: -10px;
+        margin-top: 10px;
+    }
+    /** Menu End **/
+    /** Toggled Menu **/
+    .toggledMenu {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .toggleMenu.responsiveCheck .toggleMenuBtn,
+    .topHeader .toggleMenu.responsiveCheck .toggleMenuBtn {
+        display: block;
+        margin: 0 auto;
+    }
+    .toggledMenu:after {
+        display: none;
+    }
+    /** Toggled Menu End **/
+    /** Header Social **/
+    .headerSocial {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .headerSocial li,
+    .mainHeader .headerSocial li {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    /** Header Social End **/
+    /** Header Text **/
+    .headerText {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    [class*="logoSiblings"].rowWrapper .headerText p {
+        display: block;
+        height: auto;
+    }
+    [class*="logoSiblings"].rowWrapper .headerButton {
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    /** Header Text End **/
+    /** Header Image **/
+    .headerImage {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .headerImage img {
+        height: auto !important;
+    }
+    /** Header Image End **/
+}
+@media screen and (min-width: 1200px) {
+    .boxedLayout .headerStyle3_wrapper.sticky, .boxedLayout .headerWrapper.sticky, .boxedLayout {
+    max-width: 1230px;
+    }
+}
+/** Responsive End **/

@@ -1,0 +1,1005 @@
+# Copyright (C) 2015 Creiden
+# This file is distributed under the GNU General Public License v3.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: Circle Flip 2.2.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/circleflip\n"
+"POT-Creation-Date: 2015-08-26 00:45:49+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: archive.php:24
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: archive.php:26
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: archive.php:28
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: archive.php:30
+msgid "Blog Archives"
+msgstr ""
+
+#: author.php:15
+msgid "Posts By:"
+msgstr ""
+
+#: category.php:15
+msgid "Category Archives: %s"
+msgstr ""
+
+#: comments.php:19
+msgid "Name"
+msgstr ""
+
+#: comments.php:21
+msgid "Email"
+msgstr ""
+
+#: comments.php:26 functions.php:872
+msgid "Submit"
+msgstr ""
+
+#: comments.php:27 functions.php:529
+msgid "Reply"
+msgstr ""
+
+#: functions.php:122
+msgid "Main Navigation"
+msgstr ""
+
+#: functions.php:123
+msgid "Header Menu"
+msgstr ""
+
+#: functions.php:124
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:169
+msgid "Main Sidebar"
+msgstr ""
+
+#: functions.php:178
+msgid "Image Sidebar"
+msgstr ""
+
+#: functions.php:179
+msgid "Shown on image attachment pages."
+msgstr ""
+
+#: functions.php:188
+msgid "Shop"
+msgstr ""
+
+#: functions.php:189
+msgid "Shown on shop."
+msgstr ""
+
+#: functions.php:294 partials/content-aside.php:31
+#: partials/content-image.php:20 partials/content-page.php:22
+#: partials/content-status.php:22 partials/content.php:45
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: functions.php:391
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: functions.php:428
+msgid "Comments are closed."
+msgstr ""
+
+#: functions.php:447
+msgctxt "noun"
+msgid "Body*"
+msgstr ""
+
+#: functions.php:451 inc/template-tags.php:105
+msgid "Leave a reply"
+msgstr ""
+
+#: functions.php:452
+msgid "Leave a reply to %s"
+msgstr ""
+
+#: functions.php:453
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: functions.php:454
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+
+#: functions.php:487
+msgid "Pingback:"
+msgstr ""
+
+#: functions.php:490 functions.php:520 image.php:94 inc/template-tags.php:109
+#: partials/content-page.php:25
+msgid "Edit"
+msgstr ""
+
+#: functions.php:505
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:512
+msgid "%1$s "
+msgstr ""
+
+#. translators: 1: comment author, 2: date and time
+#: functions.php:516
+msgid "%1$s"
+msgstr ""
+
+#. translators: 1: date, 2: time
+#: functions.php:517
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: functions.php:595
+msgid "Name*"
+msgstr ""
+
+#: functions.php:620
+msgid "Email*"
+msgstr ""
+
+#: functions.php:642
+msgid "Website"
+msgstr ""
+
+#: functions.php:810
+msgid "%d comment"
+msgid_plural "%d comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:872
+msgid ""
+"This post is password protected. To view it please enter your password below:"
+msgstr ""
+
+#: functions.php:872
+msgid "Password:"
+msgstr ""
+
+#: functions.php:1313
+msgid "pick an icon"
+msgstr ""
+
+#: image.php:39 single-circleflip-portfolio.php:16
+#: single-circleflip-portfolio.php:18
+msgid "Prev"
+msgstr ""
+
+#: image.php:41 single-circleflip-portfolio.php:10
+#: single-circleflip-portfolio.php:12
+msgid "Next"
+msgstr ""
+
+#: inc/circle-flip-actions.php:839
+msgid "Breaking"
+msgstr ""
+
+#: inc/circle-flip-filters.php:1104 inc/circle-flip-filters.php:1106
+#: inc/circle-flip-filters.php:1203 inc/circle-flip-filters.php:1303
+msgid "more.."
+msgstr ""
+
+#: inc/circle-flip-filters.php:1205 inc/circle-flip-filters.php:1305
+msgid "Read More.."
+msgstr ""
+
+#: inc/circle-flip-offers-cpt-functions.php:8
+msgctxt "Post Type General Name"
+msgid "Offers"
+msgstr ""
+
+#: inc/circle-flip-offers-cpt-functions.php:9
+msgctxt "Post Type Singular Name"
+msgid "Offer"
+msgstr ""
+
+#: inc/circle-flip-offers-cpt-functions.php:10
+msgid "Offer"
+msgstr ""
+
+#: inc/circle-flip-offers-cpt-functions.php:11
+msgid "Parent Item:"
+msgstr ""
+
+#: inc/circle-flip-offers-cpt-functions.php:12
+msgid "All Items"
+msgstr ""
+
+#: inc/circle-flip-offers-cpt-functions.php:13
+msgid "View Item"
+msgstr ""
+
+#: inc/circle-flip-offers-cpt-functions.php:14
+msgid "Add New Item"
+msgstr ""
+
+#: inc/circle-flip-offers-cpt-functions.php:15
+msgid "Add New"
+msgstr ""
+
+#: inc/circle-flip-offers-cpt-functions.php:16
+msgid "Edit Item"
+msgstr ""
+
+#: inc/circle-flip-offers-cpt-functions.php:17
+msgid "Update Item"
+msgstr ""
+
+#: inc/circle-flip-offers-cpt-functions.php:18
+msgid "Search Item"
+msgstr ""
+
+#: inc/circle-flip-offers-cpt-functions.php:19
+msgid "Not found"
+msgstr ""
+
+#: inc/circle-flip-offers-cpt-functions.php:20
+msgid "Not found in Trash"
+msgstr ""
+
+#: inc/circle-flip-offers-cpt-functions.php:52
+#: inc/circle-flip-offers-cpt-functions.php:54 template-sitemap.php:109
+msgid "Categories"
+msgstr ""
+
+#: inc/circle-flip-offers-cpt-functions.php:53
+#: partials/single-portfolio-layout1.php:15
+#: partials/single-portfolio-layout2.php:14
+msgid "Category"
+msgstr ""
+
+#: inc/circle-flip-offers-cpt-functions.php:55
+msgid "Search Categories"
+msgstr ""
+
+#: inc/circle-flip-offers-cpt-functions.php:56
+msgid "Popular Categories"
+msgstr ""
+
+#: inc/circle-flip-offers-cpt-functions.php:57
+msgid "All Categories"
+msgstr ""
+
+#: inc/circle-flip-offers-cpt-functions.php:58
+msgid "Edit Category"
+msgstr ""
+
+#: inc/circle-flip-offers-cpt-functions.php:59
+msgid "Update Category"
+msgstr ""
+
+#: inc/circle-flip-offers-cpt-functions.php:60
+msgid "Add New Category"
+msgstr ""
+
+#: inc/circle-flip-offers-cpt-functions.php:61
+msgid "New Category Name"
+msgstr ""
+
+#: inc/circle-flip-offers-cpt-functions.php:62
+msgid "Separate categories with commas"
+msgstr ""
+
+#: inc/circle-flip-offers-cpt-functions.php:63
+msgid "Add or remove Categories"
+msgstr ""
+
+#: inc/circle-flip-offers-cpt-functions.php:64
+msgid "Choose from the most popular Categories"
+msgstr ""
+
+#: inc/circleflip-headerBuilder.php:10
+msgctxt "metabox title"
+msgid "(Circleflip) Header Builder"
+msgstr ""
+
+#: inc/circleflip-headerBuilder.php:28 inc/circleflip-multimenu.php:35
+msgid "Menu"
+msgstr ""
+
+#: inc/circleflip-multimenu.php:12
+msgctxt "metabox title"
+msgid "(Circleflip) MultiMenu"
+msgstr ""
+
+#: inc/circleflip-multimenu.php:37
+msgid "Default (global setting)"
+msgstr ""
+
+#: inc/template-tags.php:73
+msgid "Comment navigation"
+msgstr ""
+
+#: inc/template-tags.php:74
+msgid "&larr; Newer Comments"
+msgstr ""
+
+#: inc/template-tags.php:75
+msgid "Older Comments &rarr;"
+msgstr ""
+
+#: inc/template-tags.php:93
+msgid ""
+"<span class=\"sep\">Posted on </span><a href=\"%1$s\" title=\"%2$s\" rel="
+"\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\" pubdate>%4$s</"
+"time></a><span class=\"by-author\"> <span class=\"sep\"> by </span> <span "
+"class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" "
+"rel=\"author\">%7$s</a></span></span>"
+msgstr ""
+
+#: inc/template-tags.php:99
+msgid "View all posts by %s"
+msgstr ""
+
+#: inc/template-tags.php:105
+msgid "<strong>1</strong> Reply"
+msgstr ""
+
+#: inc/template-tags.php:105
+msgid "<strong>%</strong> Replies"
+msgstr ""
+
+#: inc/template-tags.php:133
+msgid "Next page"
+msgstr ""
+
+#: inc/template-tags.php:134
+msgid "Previous page"
+msgstr ""
+
+#: inc/template-tags.php:148 inc/template-tags.php:162
+msgid "Pages:"
+msgstr ""
+
+#: inc/template-tags.php:200 inc/template-tags.php:201 searchform.php:12
+#: searchform.php:14
+msgid "Search"
+msgstr ""
+
+#: inc/template-tags.php:272
+msgid "No Comments"
+msgstr ""
+
+#: inc/template-tags.php:273
+msgid "1 Comment"
+msgstr ""
+
+#: inc/template-tags.php:274
+msgid "% Comments"
+msgstr ""
+
+#: inc/template-tags.php:275
+msgid "Comments Off"
+msgstr ""
+
+#: inc/template-tags.php:283
+msgid "Enter your password to view comments."
+msgstr ""
+
+#: inc/template-tags.php:296
+msgid "Comment on %s"
+msgstr ""
+
+#: inc/theme-customizer.php:28
+msgid "Layout"
+msgstr ""
+
+#: inc/theme-customizer.php:32
+msgid "Navbar Options"
+msgstr ""
+
+#: inc/theme-customizer.php:47
+msgid "Default Layout"
+msgstr ""
+
+#: inc/theme-customizer.php:52
+msgid "Content on left"
+msgstr ""
+
+#: inc/theme-customizer.php:53
+msgid "Content on right"
+msgstr ""
+
+#: inc/theme-customizer.php:59
+msgid "Add site name to navigation bar."
+msgstr ""
+
+#: inc/theme-customizer.php:67
+msgid "Add searchform to navigation bar."
+msgstr ""
+
+#: inc/theme-customizer.php:75
+msgid "Use inverse color on navigation bar."
+msgstr ""
+
+#: inc/theme-customizer.php:83
+msgid "Navigation Bar Position"
+msgstr ""
+
+#: inc/theme-customizer.php:88
+msgid "Static."
+msgstr ""
+
+#: inc/theme-customizer.php:89
+msgid "Fixed on top."
+msgstr ""
+
+#: inc/theme-customizer.php:90
+msgid "Fixed at bottom."
+msgstr ""
+
+#: options.php:1546
+msgid "Layout & Background"
+msgstr ""
+
+#: options.php:1567
+msgid "Upload page background"
+msgstr ""
+
+#: options.php:1568
+msgid ""
+"Upload page background , including patterns, wide images or select one of "
+"the patterns below. "
+msgstr ""
+
+#: options.php:1574
+msgid "Background pattern"
+msgstr ""
+
+#: options.php:1575
+msgid "For all pages of the website"
+msgstr ""
+
+#: partials/blog-layout-one.php:96 partials/blog-layout-three.php:114
+#: partials/blog-layout-two.php:96
+msgid "More"
+msgstr ""
+
+#: partials/content-aside.php:19 partials/content-gallery.php:20
+#: partials/content.php:19 partials/content.php:24
+msgid "Permalink to %s"
+msgstr ""
+
+#: partials/content-gallery.php:52
+msgid "This gallery contains <strong>%1$s photo</strong>."
+msgid_plural "This gallery contains <strong>%1$s photos</strong>."
+msgstr[0] ""
+msgstr[1] ""
+
+#: partials/content-gallery.php:76
+msgctxt "carousel-control"
+msgid "&lsaquo;"
+msgstr ""
+
+#: partials/content-gallery.php:77
+msgctxt "carousel-control"
+msgid "&rsaquo;"
+msgstr ""
+
+#: partials/content-not-found.php:21
+msgid "Nothing Found"
+msgstr ""
+
+#: partials/content-not-found.php:33
+msgid ""
+"Sorry, but nothing matched your search criteria. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: partials/content-not-found.php:35
+msgid ""
+"Apologies, but no results were found for the requested archive. Perhaps "
+"searching will help find a related post."
+msgstr ""
+
+#: partials/content-single.php:29 partials/content-single.php:30
+#: partials/content.php:52
+msgctxt "used between list items, there is a space after the comma"
+msgid ", "
+msgstr ""
+
+#: partials/content-single.php:33 partials/content.php:55
+msgid "Posted in %1$s."
+msgstr ""
+
+#: partials/content-single.php:35
+msgid "Tagged %1$s."
+msgstr ""
+
+#: partials/content-single.php:45
+msgid "About %s"
+msgstr ""
+
+#: partials/content-single.php:53
+msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: partials/content-singlestyle1.php:147 partials/content-singlestyle2.php:137
+msgid "SHARE"
+msgstr ""
+
+#: partials/content-singlestyle1.php:247 partials/content-singlestyle2.php:237
+msgid "Related Posts"
+msgstr ""
+
+#: partials/content-singlestyle1.php:303 partials/content-singlestyle2.php:293
+msgid "This Post is posted by"
+msgstr ""
+
+#: partials/content.php:20
+msgid "Featured"
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:161 plugins/creiden_plugins.php:112
+msgid "Install Required Plugins"
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:162 plugins/creiden_plugins.php:113
+msgid "Install Plugins"
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:163 plugins/creiden_plugins.php:114
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:164 plugins/creiden_plugins.php:115
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:165 plugins/creiden_plugins.php:116
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: plugins/class-tgm-plugin-activation.php:166 plugins/creiden_plugins.php:117
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: plugins/class-tgm-plugin-activation.php:167 plugins/creiden_plugins.php:118
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"installed."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins installed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: plugins/class-tgm-plugin-activation.php:168 plugins/creiden_plugins.php:119
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: plugins/class-tgm-plugin-activation.php:169 plugins/creiden_plugins.php:120
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: plugins/class-tgm-plugin-activation.php:170 plugins/creiden_plugins.php:121
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugin. Contact the administrator of this site for help on getting the "
+"plugin activated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins activated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: plugins/class-tgm-plugin-activation.php:171 plugins/creiden_plugins.php:122
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: plugins/class-tgm-plugin-activation.php:172 plugins/creiden_plugins.php:123
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"updated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %s plugins. "
+"Contact the administrator of this site for help on getting the plugins "
+"updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: plugins/class-tgm-plugin-activation.php:173 plugins/creiden_plugins.php:124
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: plugins/class-tgm-plugin-activation.php:174 plugins/creiden_plugins.php:125
+msgid "Activate installed plugin"
+msgid_plural "Activate installed plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: plugins/class-tgm-plugin-activation.php:175 plugins/creiden_plugins.php:126
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:176
+#: plugins/class-tgm-plugin-activation.php:180
+#: plugins/class-tgm-plugin-activation.php:1957
+#: plugins/creiden_plugins.php:127
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:177 plugins/creiden_plugins.php:128
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:179
+msgid "Return to the dashboard"
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:181
+#: plugins/class-tgm-plugin-activation.php:1645
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:533
+#: plugins/class-tgm-plugin-activation.php:2174
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:1168
+#: plugins/class-tgm-plugin-activation.php:1349
+msgid "Private Repository"
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:1171
+#: plugins/class-tgm-plugin-activation.php:1352
+msgid "Pre-Packaged"
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:1176
+msgid "WordPress Repository"
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:1179
+msgid "Required"
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:1179
+msgid "Recommended"
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:1182
+msgid "Not Installed"
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:1184
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:1289
+#: plugins/class-tgm-plugin-activation.php:1410
+msgid "Install"
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:1313
+#: plugins/class-tgm-plugin-activation.php:1411
+msgid "Activate"
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:1373
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:1389
+msgid "Plugin"
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:1390
+msgid "Source"
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:1391
+msgid "Type"
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:1392
+msgid "Status"
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:1940
+msgid "Install package not available."
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:1941
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:1942
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:1943
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:1944
+msgid "Plugin install failed."
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:1945
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:1956
+msgid "Plugin activation failed."
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:2070
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:2071
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:2071
+#: plugins/class-tgm-plugin-activation.php:2080
+msgid "Show Details"
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:2071
+#: plugins/class-tgm-plugin-activation.php:2080
+msgid "Hide Details"
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:2072
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:2073
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:2077
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:2078
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:2079
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:2080
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:2081
+msgid "All installations have been completed."
+msgstr ""
+
+#: plugins/class-tgm-plugin-activation.php:2082
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: search.php:55 search.php:70
+msgid "Search Results for: %s"
+msgstr ""
+
+#. #-#-#-#-#  circleflip.pot (Circle Flip 2.2.3)  #-#-#-#-#
+#. Template Name of the plugin/theme
+#: single-circleflip-portfolio.php:7
+msgid "Portfolio"
+msgstr ""
+
+#: single.php:55
+msgid "Wordpress Comments"
+msgstr ""
+
+#: single.php:58
+msgid "Facebook Comments"
+msgstr ""
+
+#: single.php:83
+msgid "Post navigation"
+msgstr ""
+
+#: single.php:84
+msgid "Next Post"
+msgstr ""
+
+#: single.php:85
+msgid "Previous Post"
+msgstr ""
+
+#: tag.php:18
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: template-sitemap.php:86
+msgid "Pages"
+msgstr ""
+
+#: template-sitemap.php:136
+msgid "Posts"
+msgstr ""
+
+#: templates/template-portfolio.php:113
+msgid "All"
+msgstr ""
+
+#: widgets/Testimonials_Widget.php:17
+msgid "Title for widget:"
+msgstr ""
+
+#: widgets/Testimonials_Widget.php:35 widgets/Testimonials_Widget.php:176
+msgid "Text:"
+msgstr ""
+
+#: widgets/Testimonials_Widget.php:42 widgets/Testimonials_Widget.php:184
+#: widgets/text_image_widget.php:17
+msgid "Image :"
+msgstr ""
+
+#: widgets/Testimonials_Widget.php:51 widgets/Testimonials_Widget.php:193
+msgid "Name:"
+msgstr ""
+
+#: widgets/Testimonials_Widget.php:59 widgets/Testimonials_Widget.php:201
+msgid "Job:"
+msgstr ""
+
+#: widgets/categories_with_count.php:10 widgets/contact_information.php:22
+#: widgets/flickr_widget.php:15 widgets/images_widget.php:17
+#: widgets/recent_post_thumbnails_widget.php:11
+#: widgets/recent_post_widget.php:14 widgets/text_image_widget.php:14
+#: widgets/top_post_views_widget.php:11
+msgid "Title:"
+msgstr ""
+
+#: widgets/class-circleflip-widget-google-maps.php:14
+msgid "CF Google Maps"
+msgstr ""
+
+#: widgets/contact_information.php:29 widgets/text_image_widget.php:26
+msgid "Text :"
+msgstr ""
+
+#: widgets/contact_information.php:31
+msgid "Postal Code:"
+msgstr ""
+
+#: widgets/contact_information.php:33
+msgid "Telephone:"
+msgstr ""
+
+#: widgets/contact_information.php:35
+msgid "Fax:"
+msgstr ""
+
+#: widgets/contact_information.php:185
+msgid "Postal Code: "
+msgstr ""
+
+#: widgets/contact_information.php:190
+msgid "Tel: "
+msgstr ""
+
+#: widgets/contact_information.php:195
+msgid "Fax: "
+msgstr ""
+
+#: widgets/flickr_widget.php:17
+msgid "Flickr id:"
+msgstr ""
+
+#: widgets/flickr_widget.php:19
+msgid "How many image to get?:"
+msgstr ""
+
+#: widgets/recent_post_thumbnails_widget.php:12
+#: widgets/top_post_views_widget.php:12
+msgid "Number of posts to show:"
+msgstr ""
+
+#: widgets/recent_post_widget.php:4
+msgid "CF Recent Posts"
+msgstr ""
+
+#: widgets/recent_post_widget.php:25
+msgid "How many post to show?"
+msgstr ""
+
+#: widgets/recent_post_widget.php:87
+msgctxt "post published time"
+msgid "%s ago"
+msgstr ""
+
+#: widgets/recent_post_widget.php:111
+msgctxt "posts read more"
+msgid "... More"
+msgstr ""
+
+#: widgets/shortcode_widget.php:10
+msgid "shortcode:"
+msgstr ""
+
+#: widgets/text_image_widget.php:25
+msgid "Link for image :"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Circle Flip"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://themes.creiden.com/circleflip"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Circle Flip is our latest extraordinary design, with a unique touch of "
+"development to make website building easier than ever. A lot of efforts were "
+"made by the developers to provide you with a fully customized, feature full "
+"theme. Now, only on Circle Flip, you can view the theme, make changes, and "
+"preview these changes, without paying a dollar."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Creiden"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://creiden.com/"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Site Map"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Maintenance"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Blog Page"
+msgstr ""

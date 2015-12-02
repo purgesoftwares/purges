@@ -1,0 +1,31 @@
+.twitterBlock li{
+	background: url(../../img/common/twitterIconList.png);
+	background-repeat: no-repeat;
+	background-position: 0px 5px;
+	padding: 0px 0px 0px 18px;
+	margin-bottom: 0;
+	list-style: none;
+}
+.twitterBlock li span{
+	font-family: 'sourceSans';
+	font-size: 12px;
+	color: #5a5a5a;
+	margin-bottom: 10px;
+}
+.twitterBlock li span a{
+	/* color: #b92424 */
+}
+.twitterBlock li span.tweet_time{
+	font-size: 11px;
+	display: block;
+	text-align: right;
+	margin-bottom: 12px;
+}
+.twitterTitle{
+	margin-bottom: 40px;
+}
+.twitterTitle p{
+	font-family: 'SourceSansSemiBold';
+	font-size: 22px;
+	color:#2d2d2d;
+}

@@ -1,0 +1,250 @@
+@media (max-width: 400px) {
+    .center {
+        display: inherit !important
+    }
+	/* Progress Bar Start */
+	.persentageProgress {
+		float: none;
+		margin-top: 27px;
+	}
+	.aq-block-cr_progress_block.span2 .persentageProgress {
+		float: none;
+		margin-top: 27px;
+	}
+	.aq-block-cr_progress_block.span3 .persentageProgress {
+		float: none;
+		margin-top: 27px;
+	}
+	/* Progress Bar End */
+	/* Blog Post Start */
+
+	/* Blog Post End */
+	/** Blog **/
+	/* Layout 1 */
+	.postBlog1 .postDate {
+		width: 100%;
+		float: none;
+		margin-bottom: 10px;
+	}
+	.postBlog1 .postDetails {
+		margin-left: 0;
+	}
+	.postBlog1 .postCreagory > a, .PostCategories, .postTags {
+		margin-left: 0;
+		margin-right: 15px;
+	}
+	.contentpostSC {
+		margin: 30px 0 30px 0px;
+	}
+	.commentsWrapper ul.children {
+		margin-left: 20px;
+	}
+	/* Layout 1 end */
+	/* Layout 2 */
+	.postBlog2 .postDate {
+		width: 100%;
+		float: none;
+		margin-bottom: 10px;
+	}
+	.blogStyle2 .postDate {
+		position: relative;
+		margin-top: 0;
+	}
+	.postBlog2 .postDetails {
+		margin-left: 0;
+	}
+	.postBlog2 .postCreagory a {
+		margin-left: 0;
+		margin-right: 15px;
+	}
+	.arrowdate {
+		display: none;
+	}
+	.blogStyle2 .postDate {
+		margin-left: 0;
+	}
+	/* Layout 2 end */
+	/* Layout 3 */
+	/* Layout 3 end */
+	/* Layout 4 end */
+	.postBlog4 .postDateCreagory {
+		float: none;
+		width: auto;
+	}
+	.postBlog4 .postDate {
+		width: 100px;
+		margin: 0 auto 30px;
+	}
+	.postBlog4 .postDate .day {
+		margin: 10px 0;
+		padding: 0 4px 0 0px;
+		width: 34px;
+	}
+	.postBlog4 .postDate .monthYear {
+		margin: 10px 0;
+		padding: 0 0px 0 4px;
+		width: 44px;
+	}
+	.postBlog4 .postCreagory {
+		text-align: left;
+	}
+	.postBlog4 .postCreagory a {
+		float: left;
+		margin-right: 15px;
+	}
+	.postBlog4 .postDetails {
+		margin-left: 0;
+	}
+	/* Layout 4 end */
+	/** Blog End **/
+	/* subscrib start */
+	.subscribe .icon {
+		float: none;
+		margin: 0 auto 20px;
+		display: table;
+	}
+	.subscribe p {
+		width: 100%;
+	}
+	.aq-block-cr_announcment_block.span10 .subscribe p {
+		width: 100%;
+	}
+	/*subscrib End*/
+	/*Masonry section*/
+	/*.masonryItem{
+	 width: 237px;
+	 }*/
+	/** Shop **/
+	.addToCart, .itemMore {
+		width: 100%;
+		float: none;
+		margin-bottom: 0;
+	}
+	.itemName {
+		float: none;
+		text-align: center;
+	}
+	.itemPrice {
+		float: none;
+		text-align: center;
+	}
+	.itemPrice h5 {
+		float: none;
+		display: inline-block;
+	}
+	/** Shop end **/
+	/** Single Product **/
+	.postRelatedImages {
+		margin-left: 0;
+	}
+	.postRelatedImages .singleThumbnail {
+		width: 48%;
+		margin: 1%;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	}
+	.singleProduct .product_meta span.sku, .singleProduct .product_meta span.posted_in, .singleProduct .product_meta span.tagged_as {
+		display: block;
+		margin: 0 0 7px;
+	}
+	/** Single Product end **/
+	/** Cart **/
+	.cartTable .productName {
+		padding: 0;
+	}
+	.woocommerce-ordering select {
+		width: 100%;
+	}
+	/** Cart end **/
+	/*gallery Start*/
+	.galleryStyle2 ul {
+		margin-top: 10px;
+	}
+	.galleryStyle2 li {
+		float: left;
+		margin-left: 15px;
+	}
+	.galleryStyle2 .largeImage {
+		float: none;
+		width: 100% !important;
+		height: auto;
+		min-height: 105px;
+	}
+	.galleryStyle2 ul {
+		margin-top: 10px;
+		overflow: hidden;
+		width: 100%;
+		float: none;
+	}
+	.galleryStyle1 .largeImage {
+		height: auto;
+		min-height: 105px;
+	}
+	/*gallery End*/
+	/** Forum Pages **/
+	.bbpSingleReply .bbp-author-avatar {
+		display: block;
+		margin: 0 auto 10px;
+	}
+	.bbpSingleReply .bbp-reply-author .bbp-author-name {
+		display: block;
+		margin-left: 0;
+		margin-bottom: 10px;
+	}
+	.bbpSingleReply .bbp-reply-author .bbp-author-role {
+		margin-left: 0;
+	}
+	.widget_display_search #bbp_search {
+		width: 65%;
+	}
+	.widget_display_search #bbp_search_submit {
+		width: 30%;
+	}
+	/** Forum Pages End **/
+	/** Magazine style **/
+	.magazinePost2, .span3.magazinePost2{
+		height: auto !important;
+	}
+	.magazinePost2 .image, .span3.magazinePost2 .image{
+		float: none;
+		margin: 20px auto 0 auto;
+	}
+	.magazinePost2 .image .magazinePostDate, .span3.magazinePost2 .image .magazinePostDate{
+		left: 45px;
+	}
+	.magazinePost2 .magazineData, .span3.magazinePost2 .magazineData{
+		top: 0;
+		-webkit-transform: none;
+		-ms-transform: none;
+		transform: none;
+		padding: 0 10px;
+		text-align: center;
+	}
+	.magazinePost2 .magazinePostTitle, .span3.magazinePost2 .magazinePostTitle{
+		margin: 10px auto 0px;
+	}
+	.magazinePost2 .magazinePostBtn, .span3.magazinePost2 .magazinePostBtn{
+		display: table;
+		float: none;
+		margin: 20px auto 20px;
+	}
+	/** Offers block **/
+	.offerDate {
+		padding: 20px 10px 0px 20px;
+		border-right: none;
+		display: block;
+	}
+	.offerUsers {
+		padding: 10px 20px 0px 20px;
+		display: block;
+	}
+	.offerPrice{
+		float: none;
+	}
+	.offerLink{
+		padding: 25px 20px 0px 20px;
+		float: none;
+		text-align: center;
+	}
+}

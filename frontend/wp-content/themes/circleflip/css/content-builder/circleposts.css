@@ -1,0 +1,389 @@
+.aq-block-cr_post_block .circlePost {
+	margin-bottom: 30px;
+}
+.loadCirclePosts {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.CirclePosts {
+	overflow: hidden;
+	position: relative;
+}
+.part .circlePost {
+	margin-bottom: 15px;
+}
+.loadCirclePosts .icon-spin3.animateload, .loadRecentPosts .icon-spin3.animateload {
+	-webkit-transform: rotate(360deg);
+	-webkit-transition: 1s ease;
+}
+.loadCirclePosts .icon-spin3, .loadRecentPosts .icon-spin3 {
+	display: inline-block;
+	cursor: pointer;
+}
+.circleAnimation {
+	width: 100%;
+	border-radius: 50%;
+	position: relative;
+	max-width: 270px;
+	max-height: 270px;
+	margin: 0 auto;
+}
+.circleAnimationImage {
+	border-radius: 50%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	max-width: 270px;
+	max-height: 270px;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	background-position: center center;
+}
+.circleAnimationImage img {
+	min-width: 100%;
+	min-height: 100%;
+	border-radius: 50%;
+}
+.circleAnimationArea {
+	position: absolute;
+	background: #fff; /* Same Body background */
+	border-radius: 50%;
+	max-width: 230px;
+	max-height: 230px;
+	margin: 20px;
+	box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.2), inset 0 0 3px rgba(115, 114, 23, 0.8);
+	-webkit-box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.2), inset 0 0 3px rgba(115, 114, 23, 0.8);
+	-moz-box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.2), inset 0 0 3px rgba(115, 114, 23, 0.8);
+}
+.circleAnimationSingle {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.circleAnimationSingle > div {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	max-width: 230px;
+	max-height: 230px;
+	border-radius: 50%;
+	-webkit-transition: all 0.6s ease-in-out;
+	-moz-transition: all 0.6s ease-in-out;
+	-o-transition: all 0.6s ease-in-out;
+	-ms-transition: all 0.6s ease-in-out;
+	transition: all 0.6s ease-in-out;
+}
+.circleAnimation.animation1:hover .animationContainer {
+	box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.2), inset 0 0 3px rgba(115, 114, 23, 0.8);
+	-webkit-box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.2), inset 0 0 3px rgba(115, 114, 23, 0.8);
+	-moz-box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.2), inset 0 0 3px rgba(115, 114, 23, 0.8);
+}
+.circleAnimationSingle .circleAnimationDetails {
+	text-align: center;
+	/* background-color: #e32831 */
+}
+.circleAnimationSingle .circleAnimationDetails:after {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.circleDetailsWrapper {
+	display: inline-block;
+	vertical-align: middle;
+	width: 80%;
+}
+.circleAnimationDetails h4 {
+	font-family: 'SourceSansSemiBold';
+	color: #ffffff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin: 0 auto 15px;
+	text-align: center;
+}
+.circleAnimationDetails p {
+	color: #fff;
+	padding: 15px 5px 0;
+	font-style: italic;
+	margin: 0 30px;
+	font-size: 12px;
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+.circleAnimationDetails p a {
+	color: #fff;
+}
+.circleAnimationDetails p a:hover {
+	color: #fff222;
+}
+/** Flip Animation **/
+.animation1 .animationContainer {
+	-webkit-perspective: 800px;
+	-moz-perspective: 800px;
+	-o-perspective: 800px;
+	-ms-perspective: 800px;
+	perspective: 800px;
+	-webkit-transition: -webkit-box-shadow 0.4s ease-in-out;
+	-moz-transition: -moz-box-shadow 0.4s ease-in-out;
+	-o-transition: -o-box-shadow 0.4s ease-in-out;
+	-ms-transition: -ms-box-shadow 0.4s ease-in-out;
+	transition: box-shadow 0.4s ease-in-out;
+}
+.animation1 .animationWrap {
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+.animation1 .animationWrap > div {
+	background-position: center center;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+}
+.animation1 .animationWrap .front {
+	z-index: 0;
+}
+.animation1 .animationWrap .back {
+	-webkit-transform: rotate3d(0,1,0,180deg);
+	-moz-transform: rotate3d(0,1,0,180deg);
+	-o-transform: rotate3d(0,1,0,180deg);
+	-ms-transform: rotate3d(0,1,0,180deg);
+	transform: rotate3d(0,1,0,180deg);
+	z-index: -1;
+}
+.animation1:hover .animationWrap .front {
+	z-index: -1;
+}
+.animation1:hover .animationWrap .back {
+	z-index: 0;
+}
+.animtion1:hover .animationContainer {
+	box-shadow: 0 0 0 0 rgba(255,255,255,0.8), inset 0 0 3px rgba(115,114, 23, 0.8);
+}
+.animation1:hover .animationWrap {
+	-webkit-transform: rotate3d(0,1,0,-180deg);
+	-moz-transform: rotate3d(0,1,0,-180deg);
+	-o-transform: rotate3d(0,1,0,-180deg);
+	-ms-transform: rotate3d(0,1,0,-180deg);
+	transform: rotate3d(0,1,0,-180deg);
+}
+/** Flip Animation end **/
+/** FadeIn Animation **/
+.animation2 .back {
+	opacity: 0;
+	filter: alpha(opacity=0);
+	pointer-events: none;
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: all 0.4s ease-in-out 0.2s;
+	-moz-transition: all 0.4s ease-in-out 0.2s;
+	-o-transition: all 0.4s ease-in-out 0.2s;
+	-ms-transition: all 0.4s ease-in-out 0.2s;
+	transition: all 0.4s ease-in-out 0.2s;
+}
+.animation2:hover .back {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+	filter: alpha(opacity=100);
+	pointer-events: auto;
+}
+.animation2:hover .front {
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+/** FadeIn Animation End **/
+/** Drop Down Animation **/
+.animation3 .animationContainer {
+	-webkit-transition: -webkit-box-shadow 0.4s ease-in-out;
+	-moz-transition: -moz-box-shadow 0.4s ease-in-out;
+	-o-transition: -o-box-shadow 0.4s ease-in-out;
+	-ms-transition: -ms-box-shadow 0.4s ease-in-out;
+	transition: box-shadow 0.4s ease-in-out;
+}
+.animation3 .front {
+	-webkit-transform-origin: 50% 100%;
+	-moz-transform-origin: 50% 100%;
+	-o-transform-origin: 50% 100%;
+	-ms-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+	z-index: 100;
+	box-shadow: inset 2px 1px 4px rgba(0, 0, 0, 0.1);
+	z-index: 1;
+}
+.animation3:hover .front {
+	-webkit-transform: rotate3d(1,0,0,-180deg);
+	-moz-transform: rotate3d(1,0,0,-180deg);
+	-o-transform: rotate3d(1,0,0,-180deg);
+	-ms-transform: rotate3d(1,0,0,-180deg);
+	transform: rotate3d(1,0,0,-180deg);
+	box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.2), inset 0 0 3px rgba(0, 0, 0, 0.3);
+	z-index: 10;
+}
+.animation3 .back {
+	background: white;
+	z-index: 0;
+}
+.animation3:hover .back {
+	z-index: 1;
+}
+/** Drop Down Animation End **/
+/** Animation **/
+.animation4 .animationContainer {
+	-webkit-perspective: 800px;
+	-moz-perspective: 800px;
+	-o-perspective: 800px;
+	-ms-perspective: 800px;
+	perspective: 800px;
+	-webkit-transition: -webkit-box-shadow 0.4s ease-in-out;
+	-moz-transition: -moz-box-shadow 0.4s ease-in-out;
+	-o-transition: -o-box-shadow 0.4s ease-in-out;
+	-ms-transition: -ms-box-shadow 0.4s ease-in-out;
+	transition: box-shadow 0.4s ease-in-out;
+}
+.animation4:hover .animationContainer {
+	box-shadow: 0 0 0 0 rgba(255,255,255,0.8), inset 0 0 3px rgba(115,114, 23, 0.8);
+}
+.animation4:hover .front {
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	-webkit-backface-visibility: hidden;
+}
+.animation4 .back {
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	-webkit-backface-visibility: hidden;
+}
+.animation4:hover .back {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+/** Animation **/
+.circlePost .zoomRecent {
+	background-image: url(../../img/portfolio/hovers_sprite.png);
+	background-position: -9px -10px;
+	float: none;
+	display: block;
+	margin: -20px auto 20px;
+	width: 35px;
+	height: 35px;
+	border-radius: 30px;
+	border: 0;
+	position: relative;
+	background-repeat: no-repeat;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+.circlePost .zoomRecent:hover {
+	box-shadow: 0 0 0 5px rgba(255,255,255,0.4);
+	color: #fff;
+}
+.circlePost .zoomRecent::after {
+	top: 0;
+	left: 0;
+	padding: 0;
+	box-shadow: 0 0 0 2px #ffffff;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	content: '';
+	-webkit-transition: 0.2s ease;
+	-moz-transition: 0.2s ease;
+	-o-transition: 0.2s ease;
+	transition: 0.2s ease;
+}
+.circlePost .zoomRecent:hover:after {
+	-webkit-transform: scale(0.85);
+	-moz-transform: scale(0.85);
+	-ms-transform: scale(0.85);
+	transform: scale(0.85);
+}
+.circleAnimation.btnClicked .animationWrap {
+	transform: rotate3d(0, 1, 0, -180deg);
+	-webkit-transform: rotate3d(0, 1, 0, -180deg);
+	-moz-transform: rotate3d(0, 1, 0, -180deg);
+	-o-transform: rotate3d(0, 1, 0, -180deg);
+}
+.modal {
+	width: auto;
+}
+.modal-body {
+	max-height: none;
+}
+.circlepostImageIcon a {
+	margin: 0 auto;
+	float: none;
+}
+.circlepostVideoIcon a {
+	margin: 0 auto;
+	float: none;
+	font-family: 'fontello';
+	color: white;
+	line-height: 35px;
+	background: none;
+}
+.audioPost .modal-body, .audioPost iframe {
+	width: 500px;
+}
+/** Image Flip **/
+.circleImage .circleAnimationSingle .circleAnimationDetails {
+	background-position: center center;
+}
+.circleBackImage {
+	border-radius: 50%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	max-width: 270px;
+	max-height: 270px;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	background-position: center center;
+	opacity: 0;
+	-webkit-transition: all 0.6s ease-in-out;
+	-moz-transition: all 0.6s ease-in-out;
+	-o-transition: all 0.6s ease-in-out;
+	-ms-transition: all 0.6s ease-in-out;
+	transition: all 0.6s ease-in-out;
+}
+.circleImage:hover .circleBackImage {
+	opacity: 1;
+}
+/** Image Flip End **/

@@ -1,0 +1,432 @@
+/* Header style 2 Start*/
+.headerStyle2 #logoWrapper {
+	width: 270px;
+	height: 100px;
+	margin: 0 auto;
+	float: none;	
+}
+.headerStyle2 .navbar .icon-bar::before {
+    content: initial !important;
+}
+.headerStyle2 #menuContainer, .headerStyle4  #menuContainer {
+    height: 75px;
+}
+.headerStyle2 .navbar-inner, .headerStyle4  .navbar-inner {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+.headerStyle2 .navbar, .headerStyle4 .navbar {
+    margin: 13px 0 0 0;
+}
+.top_header_style4 {
+    /* background: #e32831 */
+    height: 40px;
+}
+.top_header_style4 .navbar {
+    margin-bottom: 0px;
+}
+.top_header_style3 {
+    height: 100px;
+    margin-top: -200px;
+    z-index: 9999;
+}
+.headerStyle2 .sticky-wrapper.hide {
+    height: 0 !important
+}
+.top_header_style3 > .container {
+    margin-top: 30px;
+}
+.style1.searchbar {
+    background: #2a2a2a;
+    height: 40px;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+.style1.searchbar .searchform {
+    margin: 7px auto 0px auto;
+    width: 240px;
+    float: none;
+    display: table;
+}
+.style1.searchbar #s {
+    background-color: #1a1d20;
+    -ms--shadow: inset 0px 0px 2px 1px #1d1d1d;
+    -moz-box-shadow: inset 0px 0px 2px 1px #1d1d1d;
+    -webkit-box-shadow: inset 0px 0px 2px 1px #1d1d1d;
+    box-shadow: inset 0px 0px 2px 1px #1d1d1d;
+    border: none;
+    padding: 4px 34px 4px 14px;
+    width: 186px;
+    height: 20px;
+}
+.style1.searchbar button[type="submit"] {
+    cursor: pointer;
+    color: white;
+    font-size: 13px;
+    padding: 0px;
+    line-height: 23px;
+    margin-left: -40px;
+    width: 28px;
+    border: none;
+    background: none;
+}
+.style1.searchbar button[type="submit"] span {
+    color: white;
+    font-size: 13px;
+    line-height: 18px;
+}
+.style1.searchbar .searchHolder {
+    border-radius: 0 0 25px 25px;
+    width: 48px;
+    height: 23px;
+    margin: 0 auto;
+    z-index: 5;
+    position: absolute;
+    display: block;
+    background: #2a2a2a;
+    cursor: pointer;
+    line-height: 23px;
+    position: relative;
+}
+.style1.searchbar .searchHolder span {
+    color: white;
+    font-size: 13px;
+    margin: -5px 0px 0px 16px;
+}
+.searchbar.style1.closed {
+    margin-top: -36px;
+}
+.searchbar.style1.opened {
+    margin-top: 0px;
+}
+.headerStyle2 .navbar .nav > li > a {
+    font-family: 'sourceSans';
+    font-size: 15px;
+    color: #2a2a2a !important;
+    height: 31px;
+}
+.headerStyle2 .dropdown-menu.header-menu {
+	top: 97%;
+}
+.headerStyle2 .navbar .nav > li > a:hover,.headerStyle2 .navbar .nav > li.open > a {
+    /* color: #e32831 !important */
+    border-bottom: 5px solid #e32831;
+    margin-bottom: 2px;
+}
+.headerStyle2 .dropdown-menu.header-menu, .headerStyle4 .dropdown-menu {
+    margin-top: 0px;
+    padding: 0;
+    box-shadow: none;
+    z-index: 99;
+}
+.headerStyle2 .dropdown-menu.header-menu {
+    min-width: 99%;
+}
+.headerStyle4 .navbar .right > li > .dropdown-menu .dropdown-menu,.headerStyle2  .mainHeader .navbar .right > li > .dropdown-menu .dropdown-menu {
+    left: 100%;
+    right: auto;
+}
+.headerStyle2 .dropdown-menu > li, .headerStyle4 .dropdown-menu > li {
+    height: 45px;
+    margin-bottom: 0px;
+}
+.headerStyle2 .navbar .nav > li > .dropdown-menu:before,.headerStyle2  .navbar .nav > li > .dropdown-menu:after {
+    border: 0 !important;
+}
+.headerStyle2 .dropdown-menu > li > a, .headerStyle4 .dropdown-menu > li > a {
+    font-family: 'sourceSans';
+    color: #5a5a5a;
+    font-size: 13px;
+    height: 30px;
+    padding-top: 12px;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    background: none;
+}
+.top_header_style4 .dropdown-menu > li > a {
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    margin-top: 10px;
+    background: none;
+    font-family: 'sourceSans';
+    color: #5a5a5a;
+    font-size: 13px;
+}
+.top_header_style4 .dropdown-menu > li > a:hover {
+    background: none;
+    /* color: #e32831 */
+}
+.top_header_style4 .dropdown-menu > li:hover {
+    background: #f0efee;
+    /* color: #e32831 */
+}
+.headerStyle2 .dropdown-menu > li > a:hover, .headerStyle4 .dropdown-menu > li > a:hover {
+    background: #f0efee;
+    /* color: #e32831 */
+}
+.headerStyle2 .dropdown-menu > li:hover, .headerStyle4 .dropdown-menu > li:hover {
+    background: #f0efee;
+    /* color: #e32831 */
+}
+.header_top_left p, .header_top_right p {
+    float: left;
+    font-size: 12px;
+    color: white;
+    margin-top: 9px;
+    display: inline-block;
+}
+.header_top_right {
+    float: right;
+}
+.header_top_right p {
+    font-size: 12px;
+    color: white;
+    margin-top: 9px;
+    display: inline-block;
+}
+.headerSocial {
+    margin-top: 0px;
+}
+.headerSocial i {
+    margin-left: 0px;
+}
+.top_header_style4 .nav li:first-child {
+    margin-left: 0px;
+}
+.header_top_left .nav li, .header_top_right .nav li {
+    float: left;
+}
+.top_header_style4 .nav  .dropdown-menu li {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 0;
+}
+.top_header_style4 .nav > li {
+    margin: 5px 0 0 10px;
+    float: left;
+}
+.top_header_style3 .navbar {
+    margin-top: -10px;
+    margin-bottom: 0px;
+}
+.header_top_left .navbar left > li > .dropdown-menu .dropdown-menu, .header_top_right .navbar left > li > .dropdown-menu .dropdown-menu {
+    left: auto;
+    right: 100%;
+}
+.top_header_style4 .nav > li > a, .top_header_style4 .nav > li > a:hover, .top_header_style4 .navbar .nav > li.open > a {
+    color: white !important;
+    background: none !important;
+    border-bottom: none !important;
+    padding-bottom: 10px;
+    font-size: 15px;
+    text-shadow: none;
+    margin-top: 10px;
+    height: 31px;
+}
+.top_header_style4 .nav > li > a {
+    opacity: 0.8;
+}
+.top_header_style4 .nav > li > a:hover, .top_header_style4 .navbar .nav > li.open > a {
+    opacity: 1;
+}
+.top_header_style4 .nav {
+    margin: -5px 0 0px 0;
+}
+.headerStyle2 .menuArrowDown {
+    font-size: 11px;
+    margin-top: -3px;
+    color: inherit;
+}
+.headerStyle2 .menuArrowRight {
+    color: inherit;
+    font-size: 9px;
+    margin: 3px 0px 0px 0px;
+    float: right;
+    line-height: 16px;
+    width: 10px;
+    position: absolute;
+	right: 12px;
+}
+.top_header_style4 .nav > li > .dropdown-menu {
+    margin-top: 0px;
+}
+.top_header_style4 .nav .dropdown-menu {
+    margin-top: -5px;
+}
+
+.headerStyle2 .smallHeader .nav > li a {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+    height: 20px !important;
+}
+.headerStyle2 .nav-collapse, .nav-collapse-main {
+    z-index: 99;
+}
+.headerStyle2 .headerAfter {
+    margin: -12px auto 20px auto;
+    height: 54px;
+}
+.headerStyle2 .headerAfter .navbar {
+    margin-top: 0px;
+}
+.headerStyle2 .headerAfter .navbar .nav > li > a {
+    height: 29px;
+}
+.headerStyle2 .centeredLogo {
+    margin: 0 auto;
+    display: table;
+}
+.headerStyle2 .navbar {
+    margin: 0 auto;
+	display: table;
+	clear: both;
+	float: none;
+	padding: 23px;
+}
+.headerStyle2 .navbar .nav > li {
+    margin-bottom: 15px;
+}
+.slidingText {
+    clear: both;
+    background: #1f1f1f;
+    height: 44px;
+    overflow: hidden;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+.slidingText .movingHead {
+    width: 15%;
+    text-align: center;
+}
+.slidingText .movingHead h2 {
+    color: white;
+    font-size: 17px;
+    font-family: 'SourceSansSemiBold';
+    line-height: 32px;
+    background: #3b3b3b;
+    padding: 6px 0px 6px 0px;
+}
+.movingText {
+    width: 85%
+}
+.movingText h6 {
+    color: #c7c6c0;
+    line-height: 32px;
+    font-family: 'sourceSans';
+    font-size: 12px;
+}
+.headerStyle2, .headerStyle2 #menuContainer {
+    height: auto;
+}
+.headerStyle2 .nav > li:hover {
+    margin-bottom: 0;
+}
+.headerStyle2 .menuWrapper {
+    width: 100%;
+	margin: 0;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+}
+#overlaySlider {
+    background: green;
+    height: 400px;
+}
+#overlaySlider .headerStyle2 {
+    background: rgba(255,255,255,0.7);
+    border-bottom: 0;
+    width: 700px;
+    margin: 10px auto 0 auto;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    border-radius: 10px;
+}
+#overlaySlider .menuWrapper {
+    border-top: 0px;
+}
+#overlaySlider #logoWrapper {
+    margin-top: 15px;
+}
+.headerStyle2 .btn-navbar {
+    /* background-color: #e32831  !important */
+    background-image: none !important;
+    border-radius: 50%;
+	height: 35px;
+	width: 35px !important;
+	padding: 0;
+	border: 0;
+}
+.headerStyle2 .btn-navbar span {
+	text-shadow: none;
+	font-size: 17px;
+	line-height: 35px;
+}
+.headerStyle2 .navbar .nav.right {
+	height: 40px;
+}
+.headerStyle2 .navbar .btn-navbar .icon-bar {
+    margin-left: -2px;
+    margin-top: 3px;
+}
+.headerStyle2 .navigationButton {
+    background-color: white;
+    border-radius: 29px;
+    height: 24px;
+    width: 25px;
+    border: 5px solid #e32831;
+    cursor: pointer;
+}
+.headerStyle2 .navigationButton  span {
+    /* color: #e32831 */
+    font-size: 18px;
+    margin: -2px 0px 0px 0px;
+}
+.headerStyle2 .navigationButton button {
+    background: transparent;
+    border: none;
+    text-indent: -9999px;
+}
+.headerStyle2 .navigationButton .icon-bar {
+    /* background: #e32831 */
+    width: 14px;
+    height: 3px;
+    margin-top: 3.5px;
+    margin-left: 5px;
+    line-height: 0;
+    display: block;
+}
+.headerStyle2 .navbar .right>li>.dropdown-menu .dropdown-menu,.headerStyle2 .navbar .nav>li>.dropdown-menu.right .dropdown-menu {
+    left: 100%;
+    margin-top:-1px
+}
+/* Sticky Header Start */
+.headerStickyActive .navbar-inner {
+	height: auto !important;
+}
+.headerStyle2.headerStickyActive .navbar .nav > li > a {
+	height: 18px;
+}
+.headerStickyActive.headerStyle2 #logoWrapper {
+	margin: 5px auto 0;
+}
+.headerStyle2.headerStickyActive .navbar {
+	padding: 5px 0;
+}
+.headerStyle2.headerStickyActive .navbar .nav > li {
+	margin-bottom: 0;
+}
+.headerStickyActive.headerStyle2 .menuWrapper {
+	margin-bottom: 0;
+}
+/* Sticky Header End */
+/* end of header style */
